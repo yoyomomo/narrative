@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #FEF0DC;
+}
+
+/* MENU -- START */
+
+.vertical-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 4rem;
+    height: 100vh;
+    background-color: #61667C;
+
+}
+
+.chapter-cell {
+    padding-top: 20vh;
+}
+
+.hide h4 {
+    background-color: inherit;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1.5rem;
+    opacity: 0%;
+}
+
+
+.vertical-menu a {
+    background-color: inherit;
+    color: #252830;
+    display: block;
+    margin: auto;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.vertical-menu:hover {
+    width: auto;
+}
+
+.vertical-menu:hover .hide h4 {
+    opacity: 100%;
+
+
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: #61667C;
+    color: white;
+}
+
+/* MENU -- END */
+
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background: #FEF0DC;
+    display: grid;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
+.chapters {
+    margin-top: auto;
+}
+
+.chapters h1 {
+    font-size: 3em;
+}
+
+.mainText {
+    width: 85%;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 1.4rem;
+}
+
+.gallery {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.gallery:hover {
+    color: hotpink;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 100px;
+    margin-left: 100px;
+    margin-right: 170px;
+    margin-bottom: 30px;
+}
+
+.cell {
+    /*    background-color: rgb(220, 220, 220);*/
+    height: 50vh;
+
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    /*    font-size: 1.2em;*/
+}
+
+.col1 {
+    grid-column-end: span 12;
+    padding-left: 10em;
+    padding-right: 10em;
+    margin-top: 150px
+}
+
+.col1 h1 {
+    text-align: center;
+    font-size: 3em;
+    margin: 0;
+}
+
+.col2 {
+    grid-column-end: span 7;
+    margin-bottom: 150px;
+}
+
+.align{
+    margin-left: 20%
+}
+
+.background{
+    background-color: rgba(253, 225, 185, 0.7);
+    border-radius: 20px;
+    padding: 20px;
+}
+.col3 {
+    grid-column-end: span 5;
+    margin-top: 50px;
+    
+    
+
+
+}
+
+.col3 h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.col3 p {
+    margin: 0;
+}

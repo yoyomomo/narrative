@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where are you?</title>
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/gallery-test.css">
+
+</head>
+
+<body>
+
+    <!-- MENU *START* Code modified from https://www.w3schools.com/howto/howto_css_vertical_menu.asp -->
+
+    <div class="vertical-menu">
+        <div class="chapter-cell">
+            <div class="hide">
+                <h4>Chapter</h4>
+            </div>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#" class="active">3</a>
+            <a href="#">4</a>
+        </div>
+    </div>
+
+    <!-- MENU *END* -->
+
+
+    <div class="main">
+        <div class="chapters">
+            <h3><i>Chapter</i></h3>
+            <h1><i>"Title"</i></h1>
+        </div>
+        <div class="mainText">
+            text
+
+            <!--
+            <br> <span class="gallery" onclick="openModal();currentSlide(1)">email popup test <br>
+                (click to launch gallery)
+            </span>
+-->
+        </div>
+
+
+        <!-- GALLERY POPUP *START* // Code modified from https://www.w3schools.com/howto/howto_js_lightbox.asp -->
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="img/1.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="img/4.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="img/1.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="img/4.png" style="width:100%">
+                </div>
+
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <!-- GALLERY POPUP *END* -->
+
+    </div>
+
+    <div class="grid">
+        <div class="cell col2">
+            <p>CONTENT</p>
+        </div>
+        <div class="cell col3">
+            <p>text
+
+
+            </p>
+        </div>
+        <div class="cell col3">
+            <p>text
+            </p>
+        </div>
+        <div class="cell col2">
+            <p>CONTENT</p>
+        </div>
+
+        <div class="cell col1">
+            <h1>Hm...?</h1>
+
+            <p>text
+            </p>
+        </div>
+        <div class="cell col1">
+            <p>text
+            </p>
+        </div>
+    </div>
+    <!-- GALLERY JS *START* // Code modified from https://www.w3schools.com/howto/howto_js_lightbox.asp -->
+    <script>
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+    <!-- GALLERY JS *END* -->
+
+</body></html>
