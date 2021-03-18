@@ -20,10 +20,10 @@
             <div class="hide">
                 <h4>Chapter</h4>
             </div>
-            <a href="#">1</a>
-            <a href="#">2</a>
+            <a href="chapter1.html">1</a>
+            <a href="chapter2.html">2</a>
             <a href="#" class="active">3</a>
-            <a href="#">4</a>
+
         </div>
     </div>
 
@@ -32,52 +32,12 @@
 
     <div class="main">
         <div class="chapters">
-            <h3><i>Chapter</i></h3>
+            <h3><i>Chapter 3</i></h3>
             <h1><i>"Title"</i></h1>
         </div>
         <div class="mainText">
             text
-
-            <!--
-            <br> <span class="gallery" onclick="openModal();currentSlide(1)">email popup test <br>
-                (click to launch gallery)
-            </span>
--->
         </div>
-
-
-        <!-- GALLERY POPUP *START* // Code modified from https://www.w3schools.com/howto/howto_js_lightbox.asp -->
-
-        <div id="myModal" class="modal">
-            <span class="close cursor" onclick="closeModal()">&times;</span>
-            <div class="modal-content">
-
-                <div class="mySlides">
-                    <div class="numbertext">1 / 4</div>
-                    <img src="img/1.png" style="width:100%">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">2 / 4</div>
-                    <img src="img/4.png" style="width:100%">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">3 / 4</div>
-                    <img src="img/1.png" style="width:100%">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">4 / 4</div>
-                    <img src="img/4.png" style="width:100%">
-                </div>
-
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        </div>
-        <!-- GALLERY POPUP *END* -->
 
     </div>
 
@@ -86,13 +46,13 @@
             <p>CONTENT</p>
         </div>
         <div class="cell col3">
-            <p>text
-
+            <p>Without a second thought, I entered her name into Google and found her Instagram. I nearly jumped out of my chair. I found Sam! Some of her posts were her photography, others selfies, but most were photos with her friends.
 
             </p>
         </div>
         <div class="cell col3">
-            <p>text
+            <p>She seemed really happy, and I was glad she was, but I couldn’t help feeling a little sad that she’d might’ve forgotten about me. I was feeling more and more discouraged the further I scrolled down the page. I pushed back my chair and stepped away from my desk. As I paced back and forth, debating whether or not I should message her, I see a familiar *description of MC’s bracelet.* I reached for it and realized it was my own bracelet, just like the one Sam wore in the photo.
+
             </p>
         </div>
         <div class="cell col2">
@@ -110,49 +70,7 @@
             </p>
         </div>
     </div>
-    <!-- GALLERY JS *START* // Code modified from https://www.w3schools.com/howto/howto_js_lightbox.asp -->
-    <script>
-        function openModal() {
-            document.getElementById("myModal").style.display = "block";
-        }
 
-        function closeModal() {
-            document.getElementById("myModal").style.display = "none";
-        }
+</body>
 
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");
-            var captionText = document.getElementById("caption");
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            captionText.innerHTML = dots[slideIndex - 1].alt;
-        }
-    </script>
-    <!-- GALLERY JS *END* -->
-
-</body></html>
+</html>
