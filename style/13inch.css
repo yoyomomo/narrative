@@ -117,18 +117,18 @@ body {
 
 
 .chapters {
-    padding-top: 12%;
+    padding-top: 8%;
 
 }
 
 .chapters h3 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: Moranga-Medium;
 
 }
 
 .chapters h1 {
-    font-size: 8rem;
+    font-size: 6rem;
     line-height: 3rem;
     font-family: Moranga-LightIt;
     color: #60667E;
@@ -136,11 +136,11 @@ body {
 }
 
 .mainText {
-    width: 40%;
+    width: 50%;
     padding: 20px;
     margin: 0 auto;
-    font-size: 1.75rem;
-    line-height: 3rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
     text-align: center;
     font-family: Moranga-Light;
 
@@ -158,18 +158,18 @@ body {
 
 .photoAlbum {
     background-image: url(../PhotoAlbum.png);
-    background-position: 15rem -5rem;
-    height: 75vh;
+    background-position: 4rem -5rem;
+    height: 90vh;
     width: 100%;
     background-repeat: no-repeat;
-    background-size: 55%;
+    background-size: 60%;
     margin-left: 0;
 
 }
 
 .subHeader h1 {
     font-family: Moranga-LightIt;
-    font-size: 6rem;
+    font-size: 4rem;
     line-height: 2rem;
     color: #60667E;
     width: 40%;
@@ -186,11 +186,11 @@ body {
     border-radius: 20px;
     padding: 10px;
     margin: auto;
-    margin-right: 15%;
-    font-size: 1.75rem;
-    line-height: 3rem;
+    margin-right: 10%;
+    font-size: 1.25rem;
+    line-height: 2rem;
     font-family: Moranga-Light;
-    width: 30%;
+    width: 40%;
 }
 
 
@@ -198,7 +198,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5%;
-    margin-left: 15%;
+    margin-left: 8%;
     margin-right: 15%;
 }
 
@@ -211,8 +211,8 @@ body {
 }
 
 .col3 {
-    font-size: 1.75rem;
-    line-height: 3rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
     font-family: Moranga-Light;
     padding: 10px;
 
@@ -227,7 +227,9 @@ body {
 .col2 img {
     display: block;
     margin: auto;
-    margin-top: 5rem;
+    margin-top: 0rem;
+    width: 120%;
+
     -ms-transform: rotate(10deg);
     transform: rotate(10deg);
 }
@@ -238,10 +240,10 @@ body {
 
 
 .col1 {
-    width: 38%;
+    width: 45%;
     margin: 5rem auto;
-    font-size: 1.75rem;
-    line-height: 3rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
     font-family: Moranga-Light;
     padding: 10px;
     padding-bottom: 8rem;
@@ -251,7 +253,7 @@ body {
 .col1 h1 {
     text-align: center;
     font-family: Moranga-LightIt;
-    font-size: 6rem;
+    font-size: 4rem;
     line-height: 2rem;
     color: #60667E;
 }
@@ -269,11 +271,11 @@ input {
     text-align: center;
     display: block;
     background-color: rgb(253, 229, 195, 0.7);
-    width: 40%;
+    width: 60%;
     margin: auto;
-    padding: 1rem;
+    padding: 0.5rem;
     border: none;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
 
 
@@ -295,7 +297,7 @@ button {
     margin-top: 1rem;
     padding: 0.5rem 0.7rem;
     font-family: Moranga-Light;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
     border: none;
     border-radius: 4px;
