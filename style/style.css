@@ -302,11 +302,15 @@ button {
     cursor: pointer;
 }
 
+a {
+    text-decoration: none;
+}
+
 .hideContainer {
 
     position: relative;
-    height: 100px;
-    
+    height: 150px;
+
 }
 
 .hideText,
