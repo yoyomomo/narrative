@@ -148,11 +148,10 @@ body {
 
 .gallery {
     cursor: pointer;
-    color: hotpink;
 }
 
 .gallery:hover {
-    color: skyblue;
+    color: #808598;
 }
 
 
@@ -170,13 +169,13 @@ body {
 .subHeader h1 {
     font-family: Moranga-LightIt;
     font-size: 4rem;
-    line-height: 2rem;
+    line-height: 4rem;
     color: #60667E;
     width: 40%;
     text-align: right;
     margin: auto;
     margin-right: 15%;
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
 
 }
 
@@ -228,7 +227,7 @@ body {
     display: block;
     margin: auto;
     margin-top: 0rem;
-    width: 120%;
+    width: 100%;
 
     -ms-transform: rotate(10deg);
     transform: rotate(10deg);
