@@ -56,6 +56,11 @@ body {
 }
 
 .profile {
+    background-image: url(../img/teacher.png);
+    background-size: 190%;
+    background-repeat: no-repeat;
+    background-position: -0.7rem -0.2rem;
+
     height: 35px;
     width: 35px;
     background-color: lightgrey;
