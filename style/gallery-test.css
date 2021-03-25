@@ -16,17 +16,17 @@
 .modal-content {
     position: relative;
     margin: auto;
-    padding: 1rem;
+    padding: 1.3rem;
     max-width: 100%;
 }
 
 /* The Close Button */
 .close {
-    color: white;
+    color: #000;
     position: absolute;
-    top: 5px;
-    left: 30px;
-    font-size: 5rem;
+    top: 0px;
+    left: 840px;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -49,12 +49,12 @@
 .prev,
 .next {
     position: fixed;
-    top: 48%;
+    top: 40%;
     height: 8rem;
     width: 8rem;
     cursor: pointer;
     padding-top: 1.25rem;
-    color: white;
+    color: #61667C;
     text-align: center;
     font-size: 5rem;
     user-select: none;
@@ -64,13 +64,13 @@
 /* Position the "next button" to the right */
 .next {
     border-radius: 50%;
-    right: 36%;
+    right: 20%;
     padding-left: .5rem;
 }
 
 .prev {
     border-radius: 50%;
-    left: 36%;
+    left: 20%;
     padding-right: .5rem;
 
 }
