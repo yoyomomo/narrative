@@ -214,6 +214,7 @@ body {
     line-height: 3rem;
     font-family: Moranga-Light;
     padding: 10px;
+    height: auto;
 
 }
 
@@ -308,7 +309,7 @@ a {
 .hideContainer {
 
     position: relative;
-    height: 200px;
+    height: 120%;
 
 }
 
@@ -324,4 +325,15 @@ a {
 .hideBlock {
     z-index: 1;
     background-color: #FEF0DC;
+    opacity: 0.7;
+}
+
+.guess-submit {
+    text-decoration: none;
+    color: white;
+}
+
+.grown img {
+    width: 100%;
+    margin-top: 0;
 }
