@@ -2,14 +2,14 @@
 .modal {
     display: none;
     position: fixed;
-    top: 25%;
-    left: 30%;
+    top: 10%;
+    left: 20%;
     z-index: 1;
-    width: 40%;
+    width: 60%;
     height: auto;
     overflow: auto;
     background-color: #61667C;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 /* Modal Content */
@@ -17,7 +17,7 @@
     position: relative;
     margin: auto;
     padding: 1rem;
-    max-width: 50%;
+    max-width: 100%;
 }
 
 /* The Close Button */
