@@ -1,0 +1,176 @@
+@font-face {
+    font-family: Helvetica;
+    src: url(../Neue_Helvetica/HelveticaNeueLTStd-Roman.otf) format("opentype");
+}
+
+@font-face {
+    font-family: HelveticaThin;
+    src: url(../Neue_Helvetica/HelveticaNeueLTStd-Lt.otf) format("opentype");
+}
+
+
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    background-color: #F0F2F5;
+    font-family: Helvetica;
+}
+
+
+
+.namelabel {
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.15);
+
+
+}
+
+.container {
+    margin: 22vh auto;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    max-width: 350px;
+    background: #FFFFFF;
+    box-shadow: 5px 0px 12px 5px rgba(0, 0, 0, 0.1);
+    animation: flyin 0.75s;
+}
+
+.namelabel {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: white;
+    padding: 10px 20px;
+
+}
+
+.profile {
+    height: 35px;
+    width: 35px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    margin: auto;
+    margin-left: 0;
+}
+
+p {
+    font-size: 16px;
+    margin: auto 10px;
+}
+
+.messages {
+    height: 500px;
+    margin: 0 20px;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+    border-radius: 2px;
+    font-family: HelveticaThin;
+    letter-spacing: 1px;
+
+}
+
+
+.message,
+.message-teacher {
+    background-color: #2A84FF;
+    margin: 10px auto;
+    width: auto;
+    max-width: 75%;
+    font-size: 16px;
+    border-radius: 20px;
+    color: white;
+    padding: 12px 15px;
+    padding-bottom: 5px;
+    animation: fade 0.25s;
+
+}
+
+.message-teacher {
+    background-color: #E4E6EB;
+    color: black;
+    margin-left: 0;
+
+}
+
+.message {
+    margin-right: 0;
+}
+
+#msg1 {
+    width: 226px;
+}
+
+#msg2 {
+    width: 170px;
+}
+
+#msg3,
+#msg5,
+#msg6 {
+    width: 220px;
+}
+
+#msg4 {
+    width: 120px;
+}
+
+#msg7 {
+    width: 226px;
+}
+
+#msg8 {
+    width: 205px;
+}
+
+#msg9 {
+    width: 207px;
+}
+
+.input {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.plus-icon {
+    background: white;
+}
+
+.subinput {
+    display: flex;
+    justify-content: space-between;
+    background: #EEF0F3;
+    border: none;
+    padding: 8px;
+    border-radius: 18px;
+    width: 80%;
+}
+
+input {
+    font-size: 16px;
+    background: #EEF0F3;
+    border: none;
+    padding-left: 3px;
+    font-family: HelveticaThin;
+    letter-spacing: 1px;
+
+
+
+}
+
+.btn {
+    background-color: white;
+}
