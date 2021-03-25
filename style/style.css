@@ -325,7 +325,7 @@ a {
 .hideBlock {
     z-index: 1;
     background-color: #FEF0DC;
-    opacity: 0.7;
+    opacity: 1;
 }
 
 .guess-submit {
