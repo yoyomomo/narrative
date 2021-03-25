@@ -28,6 +28,7 @@
     left: 840px;
     font-size: 2rem;
     font-weight: bold;
+    z-index: 1;
 }
 
 .close:hover,
