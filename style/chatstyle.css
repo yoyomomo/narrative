@@ -85,6 +85,7 @@ p {
 }
 
 
+
 .message,
 .message-teacher {
     background-color: #2A84FF;
@@ -110,6 +111,7 @@ p {
 .message {
     margin-right: 0;
 }
+
 
 #msg1 {
     width: 226px;
@@ -177,4 +179,8 @@ input {
 
 .btn {
     background-color: white;
+}
+
+.invisible {
+    display: none;
 }
