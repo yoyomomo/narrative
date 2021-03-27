@@ -3,6 +3,13 @@
 const myHTMLCollection = document.getElementsByClassName("invisible");
 const HTMLElementsArr = [...myHTMLCollection];
 var objDiv = document.getElementById("chat-window");
+var msg5 = document.getElementById("msg5");
+var msg6 = document.getElementById("msg6");
+var msg7 = document.getElementById("msg7");
+var msg8 = document.getElementById("msg8");
+var msg9 = document.getElementById("msg9");
+
+
 
 
 function blueMessage() {
@@ -33,14 +40,18 @@ function show_msg4() {
 function show_msg5() {
     document.getElementById("msg5").style.display = "block";
     setTimeout(show_msg6, 3000);
-    objDiv.scrollTop = objDiv.scrollHeight;
+    msg5.scrollIntoView({
+        behavior: 'smooth'
+    });
 
 }
 
 function show_msg6() {
     document.getElementById("msg6").style.display = "block";
     setTimeout(show_msg7, 3000);
-    objDiv.scrollTop = objDiv.scrollHeight;
+    msg6.scrollIntoView({ 
+  behavior: 'smooth' 
+});
 
 
 }
@@ -48,20 +59,23 @@ function show_msg6() {
 function show_msg7() {
     document.getElementById("msg7").style.display = "block";
     setTimeout(show_msg8, 2500);
-    objDiv.scrollTop = objDiv.scrollHeight;
-
+    msg7.scrollIntoView({ 
+  behavior: 'smooth' 
+});
 }
 
 function show_msg8() {
     document.getElementById("msg8").style.display = "block";
     setTimeout(show_msg9, 1500);
-    objDiv.scrollTop = objDiv.scrollHeight;
-
+    msg8.scrollIntoView({ 
+  behavior: 'smooth' 
+});
 }
 
 function show_msg9() {
     document.getElementById("msg9").style.display = "block";
-    objDiv.scrollTop = objDiv.scrollHeight;
-
+    msg9.scrollIntoView({ 
+  behavior: 'smooth' 
+});
 
 }

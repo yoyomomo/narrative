@@ -97,7 +97,6 @@ p {
     color: white;
     padding: 12px 15px;
     padding-bottom: 5px;
-    animation: fade 0.25s;
 
 }
 
@@ -106,10 +105,17 @@ p {
     color: black;
     margin-left: 0;
 
+
 }
 
 .message {
     margin-right: 0;
+    animation: flyin2 0.5s;
+
+}
+
+.flyin2 {
+    animation: flyin2 0.5s;
 }
 
 
@@ -170,10 +176,18 @@ input {
     background: #EEF0F3;
     border: none;
     padding-left: 3px;
+    padding-top: 6px;
     font-family: HelveticaThin;
     letter-spacing: 1px;
+    width: 85%;
+    cursor: pointer;
 
 
+
+}
+
+input:focus {
+    outline: none;
 
 }
 
@@ -183,4 +197,28 @@ input {
 
 .invisible {
     display: none;
+}
+
+@keyframes flyin {
+    from {
+        transform: translateY(400px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes flyin2 {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
