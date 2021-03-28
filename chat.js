@@ -66,7 +66,7 @@ function show_msg4() {
 
 function show_msg5() {
     document.getElementById("msg5").style.display = "block";
-    setTimeout(show_msg6, 2500);
+    setTimeout(show_msg6, 2700);
     msg5.scrollIntoView({
         behavior: 'smooth'
     });
@@ -76,7 +76,7 @@ function show_msg5() {
 
 function show_msg6() {
     document.getElementById("msg6").style.display = "block";
-    setTimeout(show_msg7, 2500);
+    setTimeout(show_msg7, 2700);
     msg6.scrollIntoView({
         behavior: 'smooth'
     });
