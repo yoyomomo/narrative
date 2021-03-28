@@ -38,6 +38,7 @@ function blueMessage() {
     if (!HTMLElementsArr.length) {
         greyMessage();
         document.getElementById('chatBox').style.display = "none";
+        document.getElementById('typing-animation').style.display = "none";
 
 
     }
@@ -47,16 +48,30 @@ function blueMessage() {
 // Code by GBra 4.669 (https://stackoverflow.com/questions/66834196/how-to-make-multiple-divs-appear-one-after-the-other-using-javascript/66834457?noredirect=1#comment118141166_66834457) *** END ***
 
 function greyMessage() {
+    setTimeout(typing_animation, 1000);
+
+
+}
+
+function typing_animation() {
+    document.getElementById('typing-animation').style.display = "flex";
     setTimeout(show_msg4, 1500);
     if (!isPlayed) {
         setTimeout("audio.play()", 750); //SOUND PLAY
         isPlayed = true;
     }
 
-
 }
 
+function typing_animation2() {
+    document.getElementById('typing-animation2').style.display = "flex";
+    setTimeout(show_msg6, 2700);
+}
+
+
 function show_msg4() {
+    document.getElementById('typing-animation').style.display = "none";
+
     document.getElementById("msg4").style.display = "block";
     setTimeout(show_msg5, 1500);
 
@@ -67,10 +82,10 @@ function show_msg4() {
 
 function show_msg5() {
     document.getElementById("msg5").style.display = "block";
-    setTimeout(show_msg6, 2700);
     msg5.scrollIntoView({
         behavior: 'smooth'
     });
+    setTimeout(typing_animation2, 1000);
 
 
 }
@@ -81,6 +96,7 @@ function show_msg6() {
     msg6.scrollIntoView({
         behavior: 'smooth'
     });
+    document.getElementById('typing-animation2').style.display = "none";
 
 }
 
@@ -90,6 +106,7 @@ function show_msg7() {
     msg7.scrollIntoView({
         behavior: 'smooth'
     });
+
 }
 
 function show_msg8() {
