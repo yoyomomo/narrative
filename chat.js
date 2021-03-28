@@ -1,5 +1,3 @@
-// Code by GBra 4.669 (https://stackoverflow.com/questions/66834196/how-to-make-multiple-divs-appear-one-after-the-other-using-javascript/66834457?noredirect=1#comment118141166_66834457) *** START ***
-
 const myHTMLCollection = document.getElementsByClassName("invisible");
 const HTMLElementsArr = [...myHTMLCollection];
 var objDiv = document.getElementById("chat-window");
@@ -10,15 +8,13 @@ var msg8 = document.getElementById("msg8");
 var msg9 = document.getElementById("msg9");
 var audio = new Audio('facebookSound.mp3');
 var isPlayed = false;
+var isAnimate = false;
 
 
 var chatInputArray = [
    'Her name is Sam...',
    'Did you know her or h...'
   ];
-
-
-
 
 
 function blueMessage() {
@@ -45,11 +41,11 @@ function blueMessage() {
 
 }
 
-// Code by GBra 4.669 (https://stackoverflow.com/questions/66834196/how-to-make-multiple-divs-appear-one-after-the-other-using-javascript/66834457?noredirect=1#comment118141166_66834457) *** END ***
-
 function greyMessage() {
-    setTimeout(typing_animation, 1500);
-
+    if (!isAnimate) {
+        setTimeout(typing_animation, 1000);
+        isAnimate = true;
+    }
 
 }
 
@@ -57,7 +53,7 @@ function typing_animation() {
     document.getElementById('typing-animation').style.display = "flex";
     setTimeout(show_msg4, 1500);
     if (!isPlayed) {
-        setTimeout("audio.play()", 750); //SOUND PLAY
+        setTimeout("audio.play()", 750);
         isPlayed = true;
     }
 
@@ -74,9 +70,6 @@ function show_msg4() {
     document.getElementById("msg4").style.display = "block";
     setTimeout(typing_animation2, 500);
 
-
-
-
 }
 
 
@@ -86,13 +79,13 @@ function show_msg5() {
     msg5.scrollIntoView({
         behavior: 'smooth'
     });
-    setTimeout(show_msg6, 4000);
+    setTimeout(show_msg6, 3000);
 
 }
 
 function show_msg6() {
     document.getElementById("msg6").style.display = "block";
-    setTimeout(show_msg7, 4000);
+    setTimeout(show_msg7, 3500);
     msg6.scrollIntoView({
         behavior: 'smooth'
     });
