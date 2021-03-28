@@ -1,5 +1,7 @@
 const myHTMLCollection = document.getElementsByClassName("invisible");
 const HTMLElementsArr = [...myHTMLCollection];
+const messageTeacher = document.getElementsByClassName("message-teacher");
+const teacherArray = [...messageTeacher];
 var objDiv = document.getElementById("chat-window");
 var msg5 = document.getElementById("msg5");
 var msg6 = document.getElementById("msg6");
@@ -13,7 +15,8 @@ var isAnimate = false;
 
 var chatInputArray = [
    'Her name is Sam...',
-   'Did you know her or h...'
+   'Did you know her or h...',
+    '', '|'
   ];
 
 
@@ -33,7 +36,7 @@ function blueMessage() {
 
     if (!HTMLElementsArr.length) {
         greyMessage();
-        document.getElementById('chatBox').style.display = "none";
+        $(".chatInput").text(chatInputArray[2]);
         document.getElementById('typing-animation').style.display = "none";
 
 
@@ -61,8 +64,10 @@ function typing_animation() {
 
 function typing_animation2() {
     document.getElementById('typing-animation2').style.display = "flex";
-    setTimeout(show_msg5, 3000);
+    setTimeout(show_msg5, 2000);
 }
+
+
 
 
 function show_msg4() {
@@ -79,8 +84,22 @@ function show_msg5() {
     msg5.scrollIntoView({
         behavior: 'smooth'
     });
-    setTimeout(show_msg6, 3000);
 
+    $(".chatInput").text(chatInputArray[3]);
+
+    if (teacherArray.length > 1) {
+        document.getElementById("chat-button").onclick = clue;
+
+    }
+}
+
+function clue() {
+    document.getElementById("msg55").style.display = "block";
+    msg55.scrollIntoView({
+        behavior: 'smooth'
+    });
+    $(".chatInput").text(chatInputArray[2]);
+    setTimeout(show_msg6, 2000);
 }
 
 function show_msg6() {
