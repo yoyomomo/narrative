@@ -171,7 +171,7 @@ p {
     width: 80%;
 }
 
-input {
+.inputfield {
     font-size: 16px;
     background: #EEF0F3;
     border: none;
@@ -181,15 +181,10 @@ input {
     letter-spacing: 1px;
     width: 85%;
     cursor: pointer;
-
-
-
-}
-
-input:focus {
-    outline: none;
+    color: black;
 
 }
+
 
 .btn {
     background-color: white;

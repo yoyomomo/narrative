@@ -8,6 +8,11 @@ var msg6 = document.getElementById("msg6");
 var msg7 = document.getElementById("msg7");
 var msg8 = document.getElementById("msg8");
 var msg9 = document.getElementById("msg9");
+var chatInput = [
+   'Her name is Sam...',
+   'Did you know her or h...'
+  ];
+
 
 
 
@@ -15,6 +20,12 @@ var msg9 = document.getElementById("msg9");
 function blueMessage() {
     if (HTMLElementsArr.length > 0) {
         HTMLElementsArr.shift().classList.remove('invisible');
+        $(".chatInput").text(chatInput[1]);
+
+    }
+
+    if (HTMLElementsArr.length > 1) {
+        $(".chatInput").text(chatInput[0]);
 
     }
 
@@ -49,9 +60,9 @@ function show_msg5() {
 function show_msg6() {
     document.getElementById("msg6").style.display = "block";
     setTimeout(show_msg7, 3000);
-    msg6.scrollIntoView({ 
-  behavior: 'smooth' 
-});
+    msg6.scrollIntoView({
+        behavior: 'smooth'
+    });
 
 
 }
@@ -59,23 +70,23 @@ function show_msg6() {
 function show_msg7() {
     document.getElementById("msg7").style.display = "block";
     setTimeout(show_msg8, 2500);
-    msg7.scrollIntoView({ 
-  behavior: 'smooth' 
-});
+    msg7.scrollIntoView({
+        behavior: 'smooth'
+    });
 }
 
 function show_msg8() {
     document.getElementById("msg8").style.display = "block";
     setTimeout(show_msg9, 1500);
-    msg8.scrollIntoView({ 
-  behavior: 'smooth' 
-});
+    msg8.scrollIntoView({
+        behavior: 'smooth'
+    });
 }
 
 function show_msg9() {
     document.getElementById("msg9").style.display = "block";
-    msg9.scrollIntoView({ 
-  behavior: 'smooth' 
-});
+    msg9.scrollIntoView({
+        behavior: 'smooth'
+    });
 
 }
