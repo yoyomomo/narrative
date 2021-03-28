@@ -121,7 +121,7 @@ function show_msg6() {
 
 function show_msg7() {
     document.getElementById("msg7").style.display = "block";
-    setTimeout(show_msg8, 3000);
+    setTimeout(show_msg8, 2000);
     msg7.scrollIntoView({
         behavior: 'smooth'
     });
@@ -130,7 +130,7 @@ function show_msg7() {
 
 function show_msg8() {
     document.getElementById("msg8").style.display = "block";
-    setTimeout(show_msg9, 2000);
+    setTimeout(show_msg9, 1500);
     msg8.scrollIntoView({
         behavior: 'smooth'
     });

@@ -104,8 +104,9 @@ p {
 
 .messages {
     height: 500px;
-    margin: 0 20px;
+    margin: 0 5px;
     margin-bottom: 10px;
+    padding: 0 15px;
     overflow-y: scroll;
     border-radius: 2px;
     font-family: HelveticaThin;
@@ -177,14 +178,20 @@ p {
 }
 
 
-#msg3,
-#msg5,
-#msg6 {
-    width: 210px;
+#msg3 {
+    width: 100%;
 }
 
 #msg4 {
     width: 120px;
+}
+
+#msg5 {
+    width: 211px;
+}
+
+#msg55 {
+    width: 200px;
 }
 
 #msg7 {
@@ -192,11 +199,11 @@ p {
 }
 
 #msg8 {
-    width: 205px;
+    width: 195px;
 }
 
 #msg9 {
-    width: 207px;
+    width: 200px;
 }
 
 .input {
