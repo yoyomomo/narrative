@@ -8,7 +8,6 @@ var hint3 = document.getElementById('guess-input3').value;
 
 
 
-
 function guessAnswer() {
     $("button.guess-submit").click(function (event) {
 

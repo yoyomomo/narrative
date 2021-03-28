@@ -9,6 +9,8 @@ var msg7 = document.getElementById("msg7");
 var msg8 = document.getElementById("msg8");
 var msg9 = document.getElementById("msg9");
 var audio = new Audio('facebookSound.mp3');
+var isPlayed = false;
+
 var chatInputArray = [
    'Her name is Sam...',
    'Did you know her or h...'
@@ -21,6 +23,7 @@ var chatInputArray = [
 function blueMessage() {
     if (HTMLElementsArr.length > 0) {
         HTMLElementsArr.shift().classList.remove('invisible');
+        document.getElementById('chat-intro').style.display = "none";
         $(".chatInput").text(chatInputArray[1]);
 
     }
@@ -42,13 +45,12 @@ function blueMessage() {
 
 // Code by GBra 4.669 (https://stackoverflow.com/questions/66834196/how-to-make-multiple-divs-appear-one-after-the-other-using-javascript/66834457?noredirect=1#comment118141166_66834457) *** END ***
 
-function remove(chatInput) {
-    var element = chatInput;
-    element.remove();
-}
-
 function greyMessage() {
     setTimeout(show_msg4, 1500);
+    if (!isPlayed) {
+        setTimeout("audio.play()", 750); //SOUND PLAY
+        isPlayed = true;
+    }
 
 
 }
@@ -56,7 +58,6 @@ function greyMessage() {
 function show_msg4() {
     document.getElementById("msg4").style.display = "block";
     setTimeout(show_msg5, 1500);
-    audio.play(); //Fix This
 
 
 

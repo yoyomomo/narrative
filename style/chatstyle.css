@@ -68,6 +68,35 @@ body {
     margin-left: 0;
 }
 
+#chat-intro {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 0.75rem;
+    color: grey;
+    line-height: 1.25rem;
+}
+
+#chat-intro span {
+    color: black;
+    font-size: 1rem;
+    font-family: Helvetica;
+    margin-bottom: 0;
+
+}
+
+.profile2 {
+    background-image: url(../img/teacher.png);
+    background-size: 190%;
+    background-repeat: no-repeat;
+    background-position: -0.7rem -0.2rem;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    border: 1px solid #EEF0F3;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
 p {
     font-size: 16px;
     margin: auto 10px;
