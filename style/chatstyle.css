@@ -126,6 +126,7 @@ p {
     color: white;
     padding: 12px 15px;
     padding-bottom: 5px;
+    line-height: 21px;
 
 }
 
@@ -159,7 +160,7 @@ p {
 #msg3,
 #msg5,
 #msg6 {
-    width: 220px;
+    width: 210px;
 }
 
 #msg4 {
@@ -237,7 +238,7 @@ p {
 
 @keyframes flyin2 {
     from {
-        transform: translateY(30px);
+        transform: translateY(20px);
         opacity: 0;
     }
 

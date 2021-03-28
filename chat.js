@@ -11,6 +11,7 @@ var msg9 = document.getElementById("msg9");
 var audio = new Audio('facebookSound.mp3');
 var isPlayed = false;
 
+
 var chatInputArray = [
    'Her name is Sam...',
    'Did you know her or h...'
