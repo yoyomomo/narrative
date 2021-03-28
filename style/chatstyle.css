@@ -279,7 +279,8 @@ p {
 
 
 #typing-animation,
-#typing-animation2 {
+#typing-animation2,
+#typing-animation3 {
     display: flex;
     align-items: center;
     justify-content: center;

@@ -2,7 +2,6 @@ const myHTMLCollection = document.getElementsByClassName("invisible");
 const HTMLElementsArr = [...myHTMLCollection];
 const messageTeacher = document.getElementsByClassName("message-teacher");
 const teacherArray = [...messageTeacher];
-var objDiv = document.getElementById("chat-window");
 var msg5 = document.getElementById("msg5");
 var msg6 = document.getElementById("msg6");
 var msg7 = document.getElementById("msg7");
@@ -11,6 +10,7 @@ var msg9 = document.getElementById("msg9");
 var audio = new Audio('facebookSound.mp3');
 var isPlayed = false;
 var isAnimate = false;
+var scrollAni3 = document.getElementById("typing-animation3");
 
 
 var chatInputArray = [
@@ -46,13 +46,13 @@ function blueMessage() {
 
 function greyMessage() {
     if (!isAnimate) {
-        setTimeout(typing_animation, 1000);
+        setTimeout(typingAnimation, 1000);
         isAnimate = true;
     }
 
 }
 
-function typing_animation() {
+function typingAnimation() {
     document.getElementById('typing-animation').style.display = "flex";
     setTimeout(show_msg4, 1500);
     if (!isPlayed) {
@@ -62,10 +62,17 @@ function typing_animation() {
 
 }
 
-function typing_animation2() {
+function typingAnimation2() {
     document.getElementById('typing-animation2').style.display = "flex";
     setTimeout(show_msg5, 2000);
 }
+
+function typingAnimation3() {
+    document.getElementById('typing-animation3').style.display = "flex";
+    setTimeout(show_msg6, 3000);
+    scrollAni3.scrollIntoView();
+}
+
 
 
 
@@ -73,7 +80,7 @@ function typing_animation2() {
 function show_msg4() {
     document.getElementById('typing-animation').style.display = "none";
     document.getElementById("msg4").style.display = "block";
-    setTimeout(typing_animation2, 500);
+    setTimeout(typingAnimation2, 500);
 
 }
 
@@ -99,10 +106,11 @@ function clue() {
         behavior: 'smooth'
     });
     $(".chatInput").text(chatInputArray[2]);
-    setTimeout(show_msg6, 2000);
+    setTimeout(typingAnimation3, 1000);
 }
 
 function show_msg6() {
+    document.getElementById('typing-animation3').style.display = "none";
     document.getElementById("msg6").style.display = "block";
     setTimeout(show_msg7, 3500);
     msg6.scrollIntoView({
