@@ -6,8 +6,7 @@ var hint2 = document.getElementById('guess-input2').value;
 var answer3 = document.getElementById('guess-input3').name;
 var hint3 = document.getElementById('guess-input3').value;
 
-
-
+//     THIRD QUESTION START
 function guessAnswer() {
     $("button.guess-submit").click(function (event) {
 
@@ -39,8 +38,10 @@ function enterSubmit() {
 }
 
 enterSubmit();
+//     THIRD QUESTION END
 
 
+//     SECOND QUESTION START
 function guessAnswer2() {
     $("button.guess-submit2").click(function (event) {
 
@@ -48,7 +49,6 @@ function guessAnswer2() {
         guess2 = guess2.toLowerCase();
 
         if (guess2 == answer2) {
-
             document.getElementById('sign-in').style.display = "block";
             window.location = "#sign-in";
 
@@ -73,6 +73,9 @@ function enterSubmit2() {
 }
 
 enterSubmit2();
+//     SECOND QUESTION END
+
+//     FIRST QUESTION START
 
 function guessAnswer3() {
     $("button.guess-submit3").click(function (event) {
@@ -81,14 +84,11 @@ function guessAnswer3() {
         guess3 = guess3.toLowerCase();
 
         if (guess3 == answer3) {
-
             document.getElementById('sign-in2').style.display = "block";
             window.location = "#sign-in2";
 
-
         } else {
-            $('#wrong3').show().fadeOut(1000);
-            $('#guess-input3').val(hint);
+            $('#wrong').show().fadeOut(1000);
         }
 
     });
@@ -106,3 +106,5 @@ function enterSubmit3() {
 }
 
 enterSubmit3();
+
+//     FIRST QUESTION END
