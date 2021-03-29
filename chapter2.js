@@ -1,4 +1,39 @@
 var answer5 = document.getElementById('guess-input5').name;
+var answer4 = document.getElementById('guess-input4').name;
+
+//     FOURTH QUESTION START
+function guessAnswer4() {
+    $("button.guess-submit4").click(function (event) {
+
+        var guess4 = $('#guess-input4').val();
+        guess4 = guess4.toLowerCase();
+
+        if (guess4 == answer4) {
+            document.getElementById('deadEnd').style.display = "block";
+            window.location = "#deadEnd";
+
+
+        } else {
+            $('#wrong4').show().fadeOut(1000);
+        }
+
+    });
+
+}
+
+
+function enterSubmit4() {
+    $("#guess-input4").keyup(function (event) {
+        if (event.keyCode == 13) {
+            $("#guess-submit4").click();
+        }
+    });
+
+    guessAnswer4();
+}
+
+enterSubmit4();
+//     FOURTH QUESTION END
 
 //     FIFTH QUESTION START
 function guessAnswer5() {
