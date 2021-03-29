@@ -1,6 +1,6 @@
 var answer5 = document.getElementById('guess-input5').name;
 
-//     THIRD QUESTION START
+//     FIFTH QUESTION START
 function guessAnswer5() {
     $("button.guess-submit5").click(function (event) {
 
@@ -32,4 +32,4 @@ function enterSubmit5() {
 }
 
 enterSubmit5();
-//     THIRD QUESTION END
+//     FIFTH QUESTION END
