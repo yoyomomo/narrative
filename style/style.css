@@ -204,7 +204,6 @@ body {
 
 
 .cell {
-    /*    background-color: rgb(220, 220, 220);*/
     height: auto;
 
 }
@@ -305,6 +304,16 @@ button {
 a {
     text-decoration: none;
 }
+
+#searchImage {
+    background: blue;
+    width: 100%;
+    padding 10rm;
+    margin-bottom: 15px;
+
+}
+
+
 
 .hideContainer {
 
