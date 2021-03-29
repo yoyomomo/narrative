@@ -1,10 +1,7 @@
 var answer = document.getElementById('guess-input').name;
-var hint = document.getElementById('guess-input').value;
 var a = document.getElementById('lockChap2');
 var answer2 = document.getElementById('guess-input2').name;
-var hint2 = document.getElementById('guess-input2').value;
 var answer3 = document.getElementById('guess-input3').name;
-var hint3 = document.getElementById('guess-input3').value;
 
 //     THIRD QUESTION START
 function guessAnswer() {
@@ -14,18 +11,18 @@ function guessAnswer() {
         guess = guess.toLowerCase();
 
         if (guess == answer) {
-
             a.href = "chapter2.html";
             window.location = "chapter2.html";
 
+
         } else {
-            $('#wrong').show().fadeOut(1000);
-            $('#guess-input').val(hint);
+            $('#wrong3').show().fadeOut(1000);
         }
 
     });
 
 }
+
 
 function enterSubmit() {
     $("#guess-input").keyup(function (event) {
@@ -55,7 +52,6 @@ function guessAnswer2() {
 
         } else {
             $('#wrong2').show().fadeOut(1000);
-            $('#guess-input2').val(hint);
         }
 
     });
