@@ -3,6 +3,7 @@ var a = document.getElementById('lockChap2');
 var answer2 = document.getElementById('guess-input2').name;
 var answer3 = document.getElementById('guess-input3').name;
 
+
 //     THIRD QUESTION START
 function guessAnswer() {
     $("button.guess-submit").click(function (event) {
@@ -104,3 +105,4 @@ function enterSubmit3() {
 enterSubmit3();
 
 //     FIRST QUESTION END
+
