@@ -256,7 +256,6 @@ body {
     color: #60667E;
 }
 
-/* QUESTION & ANSWER START */
 
 .hidden {
 
@@ -302,8 +301,6 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
-
-/* QUESTION & ANSWER START */
 
 a {
     text-decoration: none;
