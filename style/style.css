@@ -306,10 +306,10 @@ a {
 }
 
 #searchImage {
-    background: blue;
     width: 100%;
-    padding 10rm;
-    margin-bottom: 15px;
+    height: auto;
+    margin: 3rem 0;
+    margin-bottom: 2.5rem;
 
 }
 
