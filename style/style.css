@@ -237,7 +237,7 @@ body {
 
 
 .col1 {
-    width: 38%;
+    width: 40%;
     margin: 5rem auto;
     font-size: 1.75rem;
     line-height: 3rem;
@@ -251,7 +251,7 @@ body {
     text-align: center;
     font-family: Moranga-LightIt;
     font-size: 6rem;
-    line-height: 2rem;
+    line-height: 5.5rem;
     color: #60667E;
 }
 
@@ -275,7 +275,10 @@ input {
     font-size: 1.75rem;
     text-transform: uppercase;
 
+}
 
+input::placeholder {
+    color: rgba(219, 148, 72, 0.25);
 }
 
 input:focus {
