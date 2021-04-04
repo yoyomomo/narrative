@@ -54,7 +54,8 @@ body {
     background-color: inherit;
     color: white;
     font-family: Moranga-Regular;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    letter-spacing: 1.5px;
     text-align: center;
     padding: 1.5rem;
     opacity: 0%;
@@ -85,7 +86,7 @@ body {
 
 
 .vertical-menu:hover {
-    width: 10.5rem;
+    width: 11rem;
 }
 
 .vertical-menu:hover .hide h4 {
