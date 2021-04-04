@@ -330,7 +330,10 @@ button {
 }
 
 button:active {
-    transform: translateY(2.5px);
+    transform: translateY(3px);
+    background-color: #595873;
+
+
 }
 
 a {
