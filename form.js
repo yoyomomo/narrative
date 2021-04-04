@@ -48,7 +48,10 @@ function guessAnswer2() {
 
         if (guess2 == answer2) {
             document.getElementById('sign-in').style.display = "block";
-            window.location = "#sign-in";
+           // window.location = "#sign-in";
+             $('html, body').animate({
+            scrollTop: $("#sign-in").offset().top
+        }, 2000);
 
 
         } else {
@@ -82,7 +85,13 @@ function guessAnswer3() {
 
         if (guess3 == answer3) {
             document.getElementById('sign-in2').style.display = "block";
-            window.location = "#sign-in2";
+            //window.location = "#sign-in2";
+            $('html, body').animate({
+            scrollTop: $("#sign-in2").offset().top
+        }, 2000);
+            
+              
+            
 
         } else {
             $('#wrong').show().fadeOut(1000);
@@ -105,4 +114,3 @@ function enterSubmit3() {
 enterSubmit3();
 
 //     FIRST QUESTION END
-
