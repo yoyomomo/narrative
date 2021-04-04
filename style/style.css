@@ -37,9 +37,9 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    width: 4rem;
+    width: 5rem;
     height: 100vh;
-    background-color: #60667E;
+    background-color: #61667C;
     transition-property: width;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
@@ -48,6 +48,7 @@ body {
 
 .chapter-cell {
     padding-top: 0vh;
+    
 }
 
 .hide h4 {
@@ -58,7 +59,9 @@ body {
     letter-spacing: 1.5px;
     text-align: center;
     padding: 1.5rem;
+    margin-bottom: 0;
     opacity: 0%;
+    cursor: default;
 }
 
 
@@ -69,10 +72,13 @@ body {
     display: block;
     margin: auto;
     padding: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     text-align: center;
     font-size: 2.5rem;
     text-decoration: none;
+    width: 5rem;
+    height: 5rem;
+    
 
 }
 
@@ -80,17 +86,20 @@ body {
     display: block;
 }
 
-#lockChap2:hover #text {
+#lockChap2:hover #text, #lockChap3:hover #text  {
     display: none;
+        transition: display 3s ease-in-out;
+
 }
 
 #lock {
     display: none;
 }
 
-#lockChap2:hover #lock {
+#lockChap2:hover #lock, #lockChap3:hover #lock {
     display: inline-block;
     margin: 0;
+    transition: display 3s ease-in-out;
 }
 
 #lockChap2, #lockChap3 {
@@ -108,13 +117,25 @@ body {
 
 }
 
-.vertical-menu a:hover {
-    background-color: #808598;
-}
-
 .vertical-menu a.active {
     color: white;
 }
+
+.vertical-menu a:hover {
+    color: white;
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+}
+
+.vertical-menu a.active:hover {
+    color: white;
+    border: none;
+    width: 5rem;
+    height: 5rem;
+    
+}
+
 
 /* MENU -- END */
 
@@ -126,7 +147,8 @@ body {
     /*display: grid;*/
     margin-bottom: 40px;
     text-align: center;
-}
+ -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */}
 
 
 .chapters {
@@ -393,4 +415,21 @@ a {
 .grown img {
     width: 100%;
     margin-top: 0;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
