@@ -265,6 +265,10 @@ body {
     color: firebrick;
 }
 
+.hidden h4 {
+    margin-top: 0.5rem;
+}
+
 input {
     font-family: Moranga-Light;
     text-align: center;
