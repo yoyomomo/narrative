@@ -90,11 +90,11 @@
     </div>
 
     <div class="photoAlbum">
-        <div class="subHeader">
-            <h1><i>Better start small,</i></h1>
-        </div>
 
         <div class="photoAlbumText">
+            <div class="subHeader">
+                <h1><i>Better start small,</i></h1>
+            </div>
 
             Robin thought, as she walked towards her unmade bed and began pushing the twisted pile towards the edge until she heard the ruffle of paper and something heavy hit the floor.
             She looked down and saw a photo album, opened to a picture of her and Sam.
@@ -114,39 +114,50 @@
 
             <!--FIRST QUESTION START -->
 
-            <span style="display: block; text-align: center;color: #60667E;">What's written on the back of the photo? <br> *Answer: ANSWER*</span>
+            <span style="display: block; text-align: center;color: #60667E;">What email is written on the back of the photo? </span>
 
             <div class="question">
-                <input id="guess-input3" type="text" name="answer" value="" />
+                <input id="guess-input3" type="text" name="happibunni43@hotmail.com" value="" />
 
                 <button id="guess-submit3" class="guess-submit3" style="margin-bottom: 2vh;">Submit</button>
 
+
             </div>
 
-            <div id="messages">
-
-                <div class="hidden" id="wrong">
-                    <h4> Nope, try again!</h4>
-                </div>
-
+            <div class="hidden" id="wrong">
+                <h4> Nope, try again!</h4>
             </div>
 
             <!--FIRST QUESTION END -->
+        </div>
+        <div class="cell col2">
+            <img src="img/samphoto.png" width="87%">
+        </div>
 
 
-            <div id="sign-in2" style="display: none;">
+    </div>
+
+    <div id="sign-in2" style="display: none;">
+
+        <div class="grid">
+            <div class="cell col2">
+                <img src="img/samphoto.png" width="87%">
+            </div>
+
+
+            <div class="cell col3">
                 Sam broke her promise too. Sadness, regret, and disappointment suddenly washed over Robin. She started to wonder what Sam was like now. Was she the same person Robin remembered? Did Sam think of her too?
                 <br><br>
                 Social media would answer her questions. Robin walked over to her computer, completely forgetting the mess she had to clean. But as she began to type Sam's name into the search bar, she realized she didn’t know Sam’s handle or even her last name. <br><br>
 
-                Finding her would be harder than she thought. She tapped her fingers on her desk, trying to think of where to begin.
+                Finding her would be harder than she thought. She tapped her fingers on her desk, trying to think of where to begin. And then suddenly, it came to her:
 
                 <!-- GALLERY LINK -->
-                <span class="gallery" onclick="openModal();currentSlide(1)">Our emails!
+                <span class="gallery" onclick="openModal();currentSlide(1)"><i>Our emails!</i>
                 </span><br><br>
 
                 <!--SECOND QUESTION START -->
-                <span style="display: block; text-align: center;color: #60667E;">What is Sam's old elementary school called? <br> *Answer: MARTIN GROVE*</span>
+                <span style="display: block; text-align: center;color: #60667E;">What is Sam's old elementary school called?</span>
 
                 <div class="question">
 
@@ -166,20 +177,16 @@
 
                 <!--SECOND QUESTION END -->
 
+
             </div>
-
         </div>
 
-        <div class="cell col2">
-            <img src="img/samphoto.png" width="87%">
-        </div>
     </div>
 
     <div id="sign-in" class="cell col1" style="display: none;">
 
         <h1>After repeatedly typing</h1>
-
-        and deleting, and typing and deleting, Robin sent the email and almost immediately, she heard the familiar notification sound of new mail. It was an automated message: “This mailbox is no longer in service.” Despite her disappointment, Robin wasn’t surprised. Sam probably thought <i>happibunni43@gmail.com</i> wasn’t appropriate for a twenty-something working professional anymore and changed it.
+        and deleting, and typing and deleting, Robin sent the email and almost immediately, she heard the familiar notification sound of new mail. It was an automated message: “This mailbox is no longer in service.” Despite her disappointment, Robin wasn’t surprised. Sam probably thought <i>happibunni43@hotmail.com</i> wasn’t appropriate for a twenty-something working professional anymore and changed it.
 
         <p>Robin would have to reach her another way. She scanned through their old emails, looking for clues. Sam mentioned her high school in one of them. Maybe Robin could contact a student or teacher she knew. She checked Facebook, but found probably hundreds of people linked to her school. Where would she even begin? They couldn’t have all known Sam. Robin needed to find a photo, a status update—something indicating they knew Sam.
             <br><br>
@@ -187,7 +194,7 @@
             <br><br>
 
             <!--THIRD QUESTION START -->
-            <span style="display: block; text-align: center;color: #60667E;">Who does Robin message? <br> *Answer: Jessica Bratford*</span>
+            <span style="display: block; text-align: center;color: #60667E;">Who does Robin message?</span>
 
             <div class="question">
 
@@ -253,10 +260,7 @@
             dots[slideIndex - 1].className += " active";
             captionText.innerHTML = dots[slideIndex - 1].alt;
         }
-
     </script>
     <!-- GALLERY JS *END* -->
     <script src="form.js"> </script>
-</body>
-
-</html>
+</body></html>

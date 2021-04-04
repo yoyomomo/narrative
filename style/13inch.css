@@ -171,11 +171,10 @@ body {
     font-size: 4rem;
     line-height: 4rem;
     color: #60667E;
-    width: 40%;
-    text-align: right;
+    text-align: left;
     margin: auto;
-    margin-right: 15%;
-    margin-bottom: 0rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
 
 }
 
@@ -183,9 +182,8 @@ body {
 
     background-color: rgba(254, 240, 220, 0.5);
     border-radius: 20px;
-    padding: 10px;
     margin: auto;
-    margin-right: 10%;
+    margin-right: 15%;
     font-size: 1.25rem;
     line-height: 2rem;
     font-family: Moranga-Light;
@@ -250,11 +248,14 @@ body {
 }
 
 .col1 h1 {
-    text-align: center;
     font-family: Moranga-LightIt;
     font-size: 4rem;
-    line-height: 2rem;
+    line-height: 4rem;
     color: #60667E;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1.5rem;
+
 }
 
 
