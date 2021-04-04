@@ -147,12 +147,14 @@ body {
     /*display: grid;*/
     margin-bottom: 40px;
     text-align: center;
- -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */}
+ 
+}
 
 
 .chapters {
     padding-top: 12%;
+-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
 
 }
 
@@ -178,6 +180,8 @@ body {
     line-height: 3rem;
     text-align: center;
     font-family: Moranga-Light;
+-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
 
 }
 
