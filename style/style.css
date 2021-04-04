@@ -76,20 +76,24 @@ body {
 
 }
 
-#lockChap2 {
-    background-color: #60667E;
+#lockChap2 #text {
+    display: block;
 }
 
-
-#lockChap2 .text {
-     display: block;
-}
-
-#lockChap2:hover .text {
+#lockChap2:hover #text {
     display: none;
 }
 
-#lockChap3 {
+#lock {
+    display: none;
+}
+
+#lockChap2:hover #lock {
+    display: inline-block;
+    margin: 0;
+}
+
+#lockChap2, #lockChap3 {
     background-color: #60667E;
 }
 
