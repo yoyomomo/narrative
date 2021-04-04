@@ -10,7 +10,10 @@ function guessAnswer4() {
 
         if (guess4 == answer4) {
             document.getElementById('deadEnd').style.display = "block";
-            window.location = "#deadEnd";
+           // window.location = "#deadEnd";
+              $('html, body').animate({
+            scrollTop: $("#deadEnd").offset().top
+        }, 2000);
 
 
         } else {
