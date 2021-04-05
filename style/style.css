@@ -68,7 +68,7 @@ body {
     letter-spacing: 1.5px;
     text-align: center;
     padding: 1.5rem;
-    margin-bottom: 0;
+    margin-bottom: 1.5rem;
     opacity: 0%;
     cursor: default;
 }
@@ -80,47 +80,16 @@ body {
     color: #252830;
     display: block;
     margin: auto;
-    padding: 1rem;
-    margin-bottom: 3rem;
+    padding: 0.5rem;
+    margin-bottom: 3.5rem;
     text-align: center;
     font-size: 2.5rem;
     text-decoration: none;
-    width: 5rem;
-    height: 5rem;
+    width: 4.5rem;
+    height: 4.5rem;
 
 
 }
-
-#lockChap2 #text {
-    display: block;
-}
-
-#lockChap2:hover #text,
-#lockChap3:hover #text {
-    display: none;
-    transition: display 3s ease-in-out;
-
-}
-
-#lock {
-    display: none;
-}
-
-#lockChap2:hover #lock,
-#lockChap3:hover #lock {
-    display: inline-block;
-    margin: 0;
-    transition: display 3s ease-in-out;
-
-}
-
-#lockChap2,
-#lockChap3 {
-    background-color: #60667E;
-    cursor: default;
-
-}
-
 
 .vertical-menu:hover {
     width: 11rem;
@@ -137,19 +106,54 @@ body {
 }
 
 .vertical-menu a:hover {
-    color: white;
-    width: 5rem;
-    height: 5rem;
+    color: #252830;
+    width: 4.5rem;
+    height: 4.5rem;
     cursor: pointer;
+    background-color: #808598;
+    border-radius: 50%;
+    margin-bottom: 3.5rem;
 }
 
 .vertical-menu a.active:hover {
     color: white;
     border: none;
-    width: 5rem;
-    height: 5rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-bottom: 3.5rem;
+
 
 }
+
+#lockChap2 #text {
+    display: block;
+}
+
+#lockChap2:hover #text,
+#lockChap3:hover #text {
+    display: none;
+
+}
+
+#lock {
+    display: none;
+}
+
+#lockChap2:hover #lock,
+#lockChap3:hover #lock {
+    display: inline-block;
+    margin: 0;
+
+}
+
+#lockChap2,
+#lockChap3 {
+    background-color: #60667E;
+    cursor: default;
+
+}
+
+
 
 
 /* MENU -- END */
