@@ -1,112 +1,116 @@
-/* The Modal (background) */
-.modal {
+.mySlides {
+    display: none
+}
+
+
+/* Slideshow container */
+.slideshow-container {
     display: none;
+
+
+
+}
+
+.purple {
+
     position: fixed;
     top: 10%;
     left: 20%;
-    z-index: 1;
-    width: 60%;
-    height: auto;
-    overflow: auto;
-    background-color: #61667C;
-    border-radius: 10px;
-}
-
-/* Modal Content */
-.modal-content {
-    position: relative;
     margin: auto;
-    padding: 1.3rem;
-    max-width: 100%;
+    padding: 1rem 2.5rem;
+    padding-top: 3.25rem;
+    width: 60%;
+    border-radius: 1rem;
+    background-color: #61667C;
+    box-shadow: -5px 5px 20px 5px rgba(0, 0, 0, 0.25);
+    animation: flyin 0.75s;
+
+    z-index: 10;
 }
 
-/* The Close Button */
-.close {
-    color: #000;
-    position: absolute;
-    top: 0px;
-    left: 840px;
-    font-size: 2rem;
-    font-weight: bold;
-    z-index: 1;
-}
-
-.close:hover,
-.close:focus {
-    color: #999;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.mySlides {
-    display: none;
-}
-
-.cursor {
-    cursor: pointer;
-}
 
 /* Next & previous buttons */
 .prev,
 .next {
-    position: fixed;
-    top: 40%;
-    height: 8rem;
-    width: 8rem;
     cursor: pointer;
-    padding-top: 1.25rem;
-    color: #61667C;
-    text-align: center;
-    font-size: 5rem;
-    user-select: none;
-    -webkit-user-select: none;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    padding: 1rem;
+    color: #A6AED1;
+    font-weight: bold;
+    font-size: 4rem;
 }
 
 /* Position the "next button" to the right */
 .next {
-    border-radius: 50%;
-    right: 20%;
-    padding-left: .5rem;
+    right: .25rem;
 }
 
 .prev {
-    border-radius: 50%;
-    left: 20%;
-    padding-right: .5rem;
-
+    left: .25rem;
 }
 
-/* On hover, add a black background color with a little bit see-through 
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}*/
 
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
+/* The Close Button */
+.close {
+    color: #A6AED1;
     position: absolute;
-    top: 0;
+    top: 0.3rem;
+    right: 1.25rem;
+    font-size: 4.5rem;
+    font-weight: bold;
 }
 
-img {
-    margin-bottom: -4px;
-}
-
-.caption-container {
-    text-align: center;
-    background-color: black;
-    padding: 2px 16px;
+.close:hover,
+.close:focus,
+.next:hover,
+.next:focus,
+.prev:hover,
+.prev:focus {
     color: white;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.demo {
-    opacity: 0.6;
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 1rem;
+    width: 1rem;
+    margin: 0 5px;
+    background-color: #A6AED1;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
 .active,
-.demo:hover {
-    opacity: 1;
+.dot:hover {
+    background-color: #252830;
+}
+
+
+@keyframes flyin {
+    from {
+        transform: translateY(400px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
 }

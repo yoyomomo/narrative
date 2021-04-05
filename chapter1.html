@@ -55,45 +55,6 @@
 
         </div>
 
-
-        <!-- GALLERY POPUP *START* // Code modified from https://www.w3schools.com/howto/howto_js_lightbox.asp -->
-
-        <div id="myModal" class="modal">
-            <span class="close cursor" onclick="closeModal()">&times;</span>
-            <div class="modal-content">
-
-                <div class="mySlides">
-                    <div class="numbertext">1 / 5</div>
-                    <img src="img/emails-1.png" style="width:100%">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">2 / 5</div>
-                    <img src="img/emails-2.png" style="width:100%">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">3 / 5</div>
-                    <img src="img/emails-3.png" style="width:100%">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">4 / 5</div>
-                    <img src="img/emails-4.png" style="width:100%">
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">5 / 5</div>
-                    <img src="img/emails-5.png" style="width:100%">
-                </div>
-
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-        </div>
-        <!-- GALLERY POPUP *END* -->
-
     </div>
 
     <div class="photoAlbum">
@@ -186,6 +147,50 @@
             </div>
         </div>
 
+        <!-- GALLERY POPUP *START* // Code modified from https://www.w3schools.com/howto/howto_js_lightbox.asp -->
+
+        <div class="slideshow-container" id="myModal">
+
+            <div class="purple">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+
+                <div class="mySlides fade">
+                    <img src="img/emails-1.png" style="width:95%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img/emails-2.png" style="width:95%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img/emails-3.png" style="width:95%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img/emails-4.png" style="width:95%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img/emails-5.png" style="width:95%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+        </div>
+        <!-- GALLERY POPUP *END* -->
+
     </div>
 
     <div id="sign-in" style="display: none;">
@@ -246,8 +251,8 @@
         function showSlides(n) {
             var i;
             var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");
-            var captionText = document.getElementById("caption");
+            var dots = document.getElementsByClassName("dot");
+
             if (n > slides.length) {
                 slideIndex = 1
             }
@@ -262,12 +267,8 @@
             }
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
-            captionText.innerHTML = dots[slideIndex - 1].alt;
         }
-
     </script>
     <!-- GALLERY JS *END* -->
     <script src="form.js"> </script>
-</body>
-
-</html>
+</body></html>
