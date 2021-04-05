@@ -255,7 +255,7 @@ body {
     grid-gap: 5%;
     margin-left: 15%;
     margin-right: 15%;
-    margin-bottom: 4vh;
+    margin-bottom: 2vh;
 }
 
 .grid2 {
@@ -264,6 +264,8 @@ body {
     grid-gap: 5%;
     margin-left: 10%;
     margin-right: 15%;
+    margin-bottom: 4vh;
+
 }
 
 
@@ -421,7 +423,7 @@ button {
     display: block;
     background-color: #60667E;
     color: white;
-    margin: auto;
+    margin: 0vh auto;
     margin-top: 1rem;
     padding: 0.5rem 0.7rem;
     font-family: Proxima;
@@ -439,9 +441,15 @@ button:active {
 
 }
 
+#magic button {
+    padding: 0.8rem 1.25rem;
+}
+
 a {
     text-decoration: none;
 }
+
+
 
 #searchImage {
     width: 100%;
@@ -456,10 +464,6 @@ a {
     color: white;
 }
 
-.grown img {
-    width: 100%;
-    margin-top: 0;
-}
 
 @keyframes fadein {
     from {

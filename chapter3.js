@@ -1,5 +1,6 @@
 var answer6 = document.getElementById('guess-input6').name;
 
+
 //     FOURTH QUESTION START
 function guessAnswer6() {
     $("button.guess-submit6").click(function (event) {
@@ -20,6 +21,11 @@ function guessAnswer6() {
 
     });
 
+}
+
+function showMore() {
+    magic.style.display = "none";
+    appear.style.display = "block";
 }
 
 
