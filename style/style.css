@@ -19,6 +19,11 @@
     src: url(../Moranga/Moranga-Light.otf) format("opentype");
 }
 
+@font-face {
+    font-family: Proxima;
+    src: url(../Proxima_Nova/ProximaSoft-Regular.otf) format("opentype");
+}
+
 * {
     box-sizing: border-box;
 
@@ -29,6 +34,8 @@ body {
     padding: 0;
     height: 100%;
     background-color: #FEF0DC;
+    font-family: Proxima;
+    color: #2d2d2d;
 }
 
 /* MENU -- START */
@@ -48,7 +55,7 @@ body {
 
 .chapter-cell {
     padding-top: 0vh;
-    
+
 }
 
 .hide h4 {
@@ -78,7 +85,7 @@ body {
     text-decoration: none;
     width: 5rem;
     height: 5rem;
-    
+
 
 }
 
@@ -86,9 +93,10 @@ body {
     display: block;
 }
 
-#lockChap2:hover #text, #lockChap3:hover #text  {
+#lockChap2:hover #text,
+#lockChap3:hover #text {
     display: none;
-        transition: display 3s ease-in-out;
+    transition: display 3s ease-in-out;
 
 }
 
@@ -96,14 +104,19 @@ body {
     display: none;
 }
 
-#lockChap2:hover #lock, #lockChap3:hover #lock {
+#lockChap2:hover #lock,
+#lockChap3:hover #lock {
     display: inline-block;
     margin: 0;
     transition: display 3s ease-in-out;
+
 }
 
-#lockChap2, #lockChap3 {
+#lockChap2,
+#lockChap3 {
     background-color: #60667E;
+    cursor: default;
+
 }
 
 
@@ -133,7 +146,7 @@ body {
     border: none;
     width: 5rem;
     height: 5rem;
-    
+
 }
 
 
@@ -147,14 +160,16 @@ body {
     /*display: grid;*/
     margin-bottom: 40px;
     text-align: center;
- 
+
 }
 
 
 .chapters {
     padding-top: 12%;
--webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
+    -webkit-animation: fadein 2s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s;
+    /* Firefox < 16 */
 
 }
 
@@ -179,9 +194,11 @@ body {
     font-size: 1.75rem;
     line-height: 3rem;
     text-align: center;
-    font-family: Moranga-Light;
--webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
+    font-family: Proxima;
+    -webkit-animation: fadein 2s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s;
+    /* Firefox < 16 */
 
 }
 
@@ -227,7 +244,7 @@ body {
     margin-right: 15%;
     font-size: 1.75rem;
     line-height: 3rem;
-    font-family: Moranga-Light;
+    font-family: Proxima;
     width: 32%;
 }
 
@@ -237,6 +254,14 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-gap: 5%;
     margin-left: 15%;
+    margin-right: 15%;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 50% 42%;
+    grid-gap: 5%;
+    margin-left: 10%;
     margin-right: 15%;
 }
 
@@ -250,7 +275,7 @@ body {
 .col3 {
     font-size: 1.75rem;
     line-height: 3rem;
-    font-family: Moranga-Light;
+    font-family: Proxima;
     padding: 10px;
     height: auto;
 
@@ -278,22 +303,48 @@ body {
 
 
 .col1 {
-    width: 40%;
+    width: 35%;
     margin: 5rem auto;
     font-size: 1.75rem;
     line-height: 3rem;
-    font-family: Moranga-Light;
+    font-family: Proxima;
     padding: 10px;
     padding-bottom: 8rem;
 
 }
 
-.col1 h1 {
+
+
+.col1 h1,
+.col4 h1 {
     text-align: center;
     font-family: Moranga-LightIt;
     font-size: 6rem;
     line-height: 5.5rem;
     color: #60667E;
+}
+
+
+
+.col4 {
+    width: 40%;
+    margin: 4rem auto;
+    font-size: 1.75rem;
+    line-height: 3rem;
+    font-family: Proxima;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.col4 img {
+    display: block;
+    margin: 3rem auto;
+
+}
+
+#ending {
+    display: none;
 }
 
 
@@ -309,7 +360,7 @@ body {
 }
 
 input {
-    font-family: Moranga-Light;
+    font-family: Proxima;
     text-align: center;
     display: block;
     background-color: rgb(253, 229, 195, 0.9);
@@ -360,7 +411,7 @@ button {
     margin: auto;
     margin-top: 1rem;
     padding: 0.5rem 0.7rem;
-    font-family: Moranga-Light;
+    font-family: Proxima;
     font-size: 1.5rem;
     text-align: center;
     border: none;
@@ -387,30 +438,6 @@ a {
 
 }
 
-
-
-.hideContainer {
-
-    position: relative;
-    height: 120%;
-
-}
-
-.hideText,
-.hideBlock {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.hideBlock {
-    z-index: 1;
-    background-color: #FEF0DC;
-    opacity: 1;
-}
-
 .guess-submit {
     text-decoration: none;
     color: white;
@@ -422,18 +449,33 @@ a {
 }
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

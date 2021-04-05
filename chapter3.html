@@ -45,7 +45,7 @@
         </div>
 
     </div>
-    <div class="grid">
+    <div class="grid2">
         <div class="cell col">
             <img src="img/phonescroll.png" width="100%">
         </div>
@@ -59,47 +59,42 @@
 
             <a href="https://ixd1721.firebird.sheridanc.on.ca/findSam/"><button>Explore Robin's room</button></a>
             <br><br>
+            <span style="display: block; text-align: center;color: #60667E;">What catches Robin's eye?</span>
 
-            <span style="display: block; text-align: center;color: #60667E;">What does Robin find in her room?<br> *Just click submit to unblock*</span>
+            <!-- SIXTH QUESTION *START* -->
 
             <div class="question">
 
-                <!--QUESTION FORM + BUTTON-->
-                <input id="guess-input9" type="text" name="jessica bratford" value="" />
-                <!--QUESTION FORM + BUTTON-->
-
-
-                <button onclick="myFunction()">Submit</button> <br>
+                <input id="guess-input6" type="text" name="bracelet" value="" />
+                <button id="guess-submit6" class="guess-submit6" style="margin-bottom: 0;">Submit</button>
 
             </div>
 
-            <div class="hideContainer">
-                <div class="hideText">
-
-                    Robin reached for it and realized it was her own bracelet, just like the one Sam wore in the photo.
-                    <br>
-
-
-                    Her courage came flooding back in. She opened the messenger and began typing...
-
-                    <div class="grown">
-                        <img src="img/meetingsamagain.png" width="100%">
-                    </div>
-                </div>
-
-                <div id="hideBlock" class="hideBlock"></div>
+            <div class="hidden" id="wrong6">
+                <h4> Nope, try again!</h4>
             </div>
+            <!-- SIXTH QUESTION *END* -->
         </div>
 
+    </div>
+    <div class="cell col4" id="ending">
+
+        <h1>Robin reached for it</h1>
+
+        and she realized it was her own bracelet,<br>
+        just like the one Sam wore in the photo.<br>
+
+        Her courage came flooding back in. <br>She opened the messenger and began typing...
+
+        <img src="img/meetingsamagain.png" width="100%">
 
     </div>
 
-    <script>
-        function myFunction() {
-            document.getElementById("hideBlock").style.display = "none";
-
-        }
-    </script>
 
 
+
+
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="chapter3.js"> </script>
 </body></html>
