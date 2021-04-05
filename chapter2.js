@@ -10,14 +10,19 @@ function guessAnswer4() {
 
         if (guess4 == answer4) {
             document.getElementById('deadEnd').style.display = "block";
-           // window.location = "#deadEnd";
-              $('html, body').animate({
-            scrollTop: $("#deadEnd").offset().top
-        }, 2000);
+            // window.location = "#deadEnd";
+            $('html, body').animate({
+                scrollTop: $("#deadEnd").offset().top
+            }, 2000);
 
 
         } else {
             $('#wrong4').show().fadeOut(1000);
+            $("#guess-input4").animate({
+                "border-color": "#b22222"
+            }).animate({
+                "border-color": "#FEF0DC"
+            });
         }
 
     });
@@ -52,6 +57,11 @@ function guessAnswer5() {
 
         } else {
             $('#wrong5').show().fadeOut(1000);
+            $("#guess-input5").animate({
+                "border-color": "#b22222"
+            }).animate({
+                "border-color": "#FEF0DC"
+            });
         }
 
     });

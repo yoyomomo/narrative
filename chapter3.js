@@ -1,6 +1,11 @@
 var answer6 = document.getElementById('guess-input6').name;
 
 
+function showMore() {
+    magic.style.display = "none";
+    appear.style.display = "block";
+}
+
 //     FOURTH QUESTION START
 function guessAnswer6() {
     $("button.guess-submit6").click(function (event) {
@@ -17,15 +22,15 @@ function guessAnswer6() {
 
         } else {
             $('#wrong6').show().fadeOut(1000);
+            $("#guess-input6").animate({
+                "border-color": "#b22222"
+            }).animate({
+                "border-color": "#FEF0DC"
+            });
         }
 
     });
 
-}
-
-function showMore() {
-    magic.style.display = "none";
-    appear.style.display = "block";
 }
 
 
