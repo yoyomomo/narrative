@@ -19,6 +19,11 @@ function guessAnswer() {
 
         } else {
             $('#wrong3').show().fadeOut(1000);
+              $("#guess-input").animate({
+                "border-color": "#b22222"
+            }).animate({
+                "border-color": "#FEF0DC"
+            });
         }
 
     });
@@ -49,14 +54,19 @@ function guessAnswer2() {
 
         if (guess2 == answer2) {
             document.getElementById('sign-in').style.display = "block";
-           // window.location = "#sign-in";
-             $('html, body').animate({
-            scrollTop: $("#sign-in").offset().top
-        }, 2000);
+            // window.location = "#sign-in";
+            $('html, body').animate({
+                scrollTop: $("#sign-in").offset().top
+            }, 2000);
 
 
         } else {
             $('#wrong2').show().fadeOut(1000);
+              $("#guess-input2").animate({
+                "border-color": "#b22222"
+            }).animate({
+                "border-color": "#FEF0DC"
+            });
         }
 
     });
@@ -88,14 +98,20 @@ function guessAnswer3() {
             document.getElementById('sign-in2').style.display = "block";
             //window.location = "#sign-in2";
             $('html, body').animate({
-            scrollTop: $("#sign-in2").offset().top
-        }, 2000);
-            
-              
-            
+                scrollTop: $("#sign-in2").offset().top
+            }, 2000);
+
+
+
 
         } else {
             $('#wrong').show().fadeOut(1000);
+            $("#guess-input3").animate({
+                "border-color": "#b22222"
+            }).animate({
+                "border-color": "#FEF0DC"
+            });
+
         }
 
     });

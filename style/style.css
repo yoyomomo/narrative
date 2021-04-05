@@ -255,6 +255,7 @@ body {
     grid-gap: 5%;
     margin-left: 15%;
     margin-right: 15%;
+    margin-bottom: 4vh;
 }
 
 .grid2 {
@@ -349,7 +350,6 @@ body {
 
 
 .hidden {
-
     display: none;
     text-align: center;
     color: firebrick;
@@ -358,6 +358,7 @@ body {
 .hidden h4 {
     margin-top: 0.5rem;
 }
+
 
 input {
     font-family: Proxima;
@@ -368,7 +369,7 @@ input {
     margin: auto;
     margin-top: 1rem;
     padding: 1rem;
-    border: none;
+    border: 2px solid #FEF0DC;
     border-radius: 5px;
     font-size: 1.75rem;
     text-transform: capitalize;
@@ -399,10 +400,22 @@ input:hover {
 }
 
 
+
 #guess-input3 {
     text-transform: lowercase;
 
 }
+
+#guess-input,
+#guess-input2,
+#guess-input3,
+#guess-input4,
+#guess-input5,
+#guess-input6 {
+    border: 2px solid #FEF0DC;
+
+}
+
 
 button {
     display: block;
