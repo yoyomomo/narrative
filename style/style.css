@@ -266,10 +266,10 @@ body {
 
 .grid2 {
     display: grid;
-    grid-template-columns: 50% 42%;
+    grid-template-columns: 53% 42%;
     grid-gap: 5%;
-    margin-left: 10%;
-    margin-right: 15%;
+    margin-left: 8%;
+    margin-right: 20%;
     margin-bottom: 4vh;
 
 }
@@ -324,8 +324,9 @@ body {
 
 
 
-.col1 h1,
-.col4 h1 {
+
+.col4 h1,
+#sign-in h1 {
     text-align: center;
     font-family: Moranga-LightIt;
     font-size: 6rem;
