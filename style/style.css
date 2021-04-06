@@ -102,15 +102,15 @@ body {
 }
 
 .vertical-menu a.active {
-    color: white;
+    color: #FEF0DC;
 }
 
 .vertical-menu a:hover {
-    color: #252830;
+    color: white;
     width: 4.5rem;
     height: 4.5rem;
     cursor: pointer;
-    background-color: #808598;
+    background-color: #A6AED1;
     border-radius: 50%;
     margin-bottom: 3.5rem;
 }
@@ -306,6 +306,7 @@ body {
     margin-top: 2rem;
     -ms-transform: rotate(10deg);
     transform: rotate(10deg);
+    z-index:
 }
 
 

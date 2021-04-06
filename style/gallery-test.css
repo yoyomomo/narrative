@@ -1,5 +1,12 @@
+/*GALLERY POPUP CSS // Code modified from https://www.w3schools.com/howto/howto_js_lightbox.asp and https://www.w3schools.com/howto/howto_js_slideshow.asp--> */
+
 .mySlides {
     display: none
+}
+
+.mySlides img {
+    display: block;
+    margin: auto;
 }
 
 
@@ -83,7 +90,7 @@
     background-color: #A6AED1;
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.6s ease;
+    transition: background-color 0.4s ease;
 }
 
 .active,
