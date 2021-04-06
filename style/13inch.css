@@ -19,6 +19,11 @@
     src: url(../Moranga/Moranga-Light.otf) format("opentype");
 }
 
+@font-face {
+    font-family: Proxima;
+    src: url(../Proxima_Nova/ProximaSoft-Regular.otf) format("opentype");
+}
+
 * {
     box-sizing: border-box;
 
@@ -29,6 +34,8 @@ body {
     padding: 0;
     height: 100%;
     background-color: #FEF0DC;
+    font-family: Proxima;
+    color: #2d2d2d;
 }
 
 /* MENU -- START */
@@ -37,27 +44,39 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    width: 4rem;
-    height: 100vh;
-    background-color: #60667E;
-    transition-property: width;
+    width: 100%;
+    height: 3.25rem;
+    background-color: #61667C;
+    /*transition-property: height;
     transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-
+    transition-timing-function: ease-in-out;*/
+    box-shadow: -5px 0px 20px 5px rgba(0, 0, 0, 0.2);
+    z-index: 100;
 }
 
 .chapter-cell {
-    padding-top: 0vh;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    grid-gap: 10%;
 }
+
+.chapters_menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
 
 .hide h4 {
     background-color: inherit;
     color: white;
     font-family: Moranga-Regular;
-    font-size: 2rem;
+    font-size: 1.4rem;
+    letter-spacing: 1.25px;
     text-align: center;
-    padding: 1.5rem;
-    opacity: 0%;
+    margin: auto;
+    padding: 0.5rem;
+    opacity: 100%;
+    cursor: default;
 }
 
 
@@ -65,27 +84,21 @@ body {
     font-family: Moranga-Regular;
     background-color: inherit;
     color: #252830;
-    display: block;
-    margin: auto;
-    padding: 1rem;
-    margin-bottom: 2rem;
+    margin: 0;
+    margin-left: 1rem;
+    padding: 0.5rem;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     text-decoration: none;
+    width: 4rem;
+    height: 3.25rem;
+    display: inline-block;
 
 }
-
-#lockChap2 {
-    background-color: #60667E;
-}
-
-#lockChap3 {
-    background-color: #60667E;
-}
-
 
 .vertical-menu:hover {
-    width: 10.5rem;
+    width: 100%;
+    height: 3.25rem;
 }
 
 .vertical-menu:hover .hide h4 {
@@ -94,86 +107,155 @@ body {
 
 }
 
-.vertical-menu a:hover {
-    background-color: #808598;
+.vertical-menu a.active {
+    color: #FEF0DC;
 }
 
-.vertical-menu a.active {
-    background-color: #808598;
+.vertical-menu a:hover {
     color: white;
+    width: 4rem;
+    height: 3.25rem;
+    cursor: pointer;
+    background-color: #A6AED1;
+    border-radius: 0%;
+    margin-bottom: 3.5rem;
 }
+
+.vertical-menu a.active:hover {
+    color: white;
+    border: none;
+    width: 4rem;
+    height: 3.25rem;
+    margin-bottom: 3.5rem;
+
+
+}
+
+#lockChap2 #text {
+    display: block;
+}
+
+#lockChap2:hover #text,
+#lockChap3:hover #text {
+    display: none;
+}
+
+#lock {
+    display: none;
+}
+
+#lockChap2:hover #lock,
+#lockChap3:hover #lock {
+    display: inline-block;
+    margin: 0;
+
+}
+
+#lockChap2,
+#lockChap3 {
+    background-color: #60667E;
+    cursor: default;
+
+}
+
+#lockChap2 img,
+#lockChap3 img {
+    max-width: 2rem;
+
+}
+
+
+
 
 /* MENU -- END */
 
 
 .main {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: #FEF0DC;
     /*display: grid;*/
     margin-bottom: 40px;
     text-align: center;
+
 }
 
 
 .chapters {
-    padding-top: 8%;
+    padding-top: 45%;
+    -webkit-animation: fadein 2s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s;
+    /* Firefox < 16 */
 
 }
 
 .chapters h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family: Moranga-Medium;
+    padding-bottom: 0;
+    margin-top: 0;
+
 
 }
 
 .chapters h1 {
-    font-size: 6rem;
+    font-size: 5rem;
     line-height: 3rem;
     font-family: Moranga-LightIt;
     color: #60667E;
+    margin-top: 0;
 
 }
 
 .mainText {
-    width: 50%;
+    width: 95%;
     padding: 20px;
     margin: 0 auto;
-    font-size: 1.25rem;
-    line-height: 2rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
     text-align: center;
-    font-family: Moranga-Light;
-
+    font-family: Proxima;
+    -webkit-animation: fadein 2s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s;
+    /* Firefox < 16 */
 }
 
-.gallery {
+.mainText br {
+    display: none;
+}
+
+#gallery {
     cursor: pointer;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
-.gallery:hover {
+#gallery:hover {
     color: #808598;
 }
 
 
 .photoAlbum {
-    background-image: url(../PhotoAlbum.png);
-    background-position: 4rem -5rem;
-    height: 90vh;
+    background-image: none;
+    background-position: 15rem -5rem;
+    height: auto;
     width: 100%;
     background-repeat: no-repeat;
-    background-size: 60%;
+    background-size: 55%;
     margin-left: 0;
 
 }
 
 .subHeader h1 {
     font-family: Moranga-LightIt;
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 3rem;
+    line-height: 3rem;
     color: #60667E;
-    text-align: left;
-    margin: auto;
     width: 100%;
+    text-align: center;
+    margin: auto;
     margin-bottom: 1.5rem;
 
 }
@@ -182,102 +264,180 @@ body {
 
     background-color: rgba(254, 240, 220, 0.5);
     border-radius: 20px;
+    padding: 10px;
     margin: auto;
-    margin-right: 15%;
-    font-size: 1.25rem;
-    line-height: 2rem;
-    font-family: Moranga-Light;
-    width: 40%;
+    margin-right: auto;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: Proxima;
+    width: 95%;
+}
+
+.photoAlbumText img {
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
 }
 
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 5%;
+    margin-left: 2.5%;
+    margin-right: 2.65%;
+    margin-bottom: 2vh;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 53% 42%;
     grid-gap: 5%;
     margin-left: 8%;
-    margin-right: 15%;
+    margin-right: 20%;
+    margin-bottom: 4vh;
+
 }
 
 
 
 .cell {
-    /*    background-color: rgb(220, 220, 220);*/
     height: auto;
 
 }
 
 .col3 {
-    font-size: 1.25rem;
-    line-height: 2rem;
-    font-family: Moranga-Light;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: Proxima;
     padding: 10px;
+    height: auto;
 
+}
+
+.col3 span,
+.col1 span {
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 .col3 img {
     display: block;
     margin: auto;
     margin-top: 6rem;
+
+}
+
+#mobilepic {
+    margin-top: 3vh;
+    -ms-transform: rotate(5deg);
+    transform: rotate(5deg);
 }
 
 .col2 img {
-    display: block;
+    display: none;
     margin: auto;
-    margin-top: 0rem;
-    width: 100%;
-
+    margin-bottom: 6vh;
+    max-height: 60vh;
+    margin-top: 2rem;
     -ms-transform: rotate(10deg);
     transform: rotate(10deg);
 }
 
 .col2 {
-    padding: 2rem;
+    display: none;
 }
 
 
+
+
 .col1 {
-    width: 45%;
-    margin: 5rem auto;
-    font-size: 1.25rem;
-    line-height: 2rem;
-    font-family: Moranga-Light;
+    width: 95%;
+    margin: 1.5rem auto;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: Proxima;
     padding: 10px;
     padding-bottom: 8rem;
 
 }
 
-.col1 h1 {
-    font-family: Moranga-LightIt;
-    font-size: 4rem;
-    line-height: 4rem;
-    color: #60667E;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 1.5rem;
 
+
+
+.col4 h1 {
+    text-align: center;
+    font-family: Moranga-LightIt;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: #60667E;
+}
+
+#sign-in h1 {
+    margin: 0 auto;
+    margin-top: 2rem;
+    text-align: center;
+    font-family: Moranga-LightIt;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: #60667E;
+}
+
+
+
+
+.col4 {
+    width: 40%;
+    margin: 4rem auto;
+    font-size: 1.75rem;
+    line-height: 3rem;
+    font-family: Proxima;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.col4 img {
+    display: block;
+    margin: 3rem auto;
+
+}
+
+#ending {
+    display: none;
 }
 
 
 .hidden {
-
     display: none;
     text-align: center;
     color: firebrick;
 }
 
+.hidden h4 {
+    margin-top: 0.5rem;
+}
+
+
 input {
-    font-family: Moranga-Light;
+    font-family: Proxima;
     text-align: center;
     display: block;
-    background-color: rgb(253, 229, 195, 0.7);
-    width: 60%;
+    background-color: rgb(253, 229, 195, 0.9);
+    width: 80%;
     margin: auto;
+    margin-top: 1rem;
     padding: 0.5rem;
-    border: none;
-    font-size: 1.5rem;
-    text-transform: uppercase;
+    border: 2px solid #FEF0DC;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-transform: capitalize;
 
+}
+
+input::placeholder {
+    color: rgba(219, 148, 72, 0.35);
+    text-transform: lowercase;
+    font-size: 1.2rem;
 
 }
 
@@ -289,17 +449,106 @@ input:focus {
     background-repeat: repeat-x;
 }
 
+input:hover {
+    outline: none;
+    background-image: linear-gradient(to right, rgba(219, 148, 72, 0.8) 60%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 30px 3px;
+    background-repeat: repeat-x;
+}
+
+
+
+#guess-input3 {
+    text-transform: lowercase;
+
+}
+
+#guess-input,
+#guess-input2,
+#guess-input3,
+#guess-input4,
+#guess-input5,
+#guess-input6 {
+    border: 2px solid #FEF0DC;
+
+}
+
+
 button {
     display: block;
     background-color: #60667E;
     color: white;
-    margin: auto;
+    margin: 0vh auto;
     margin-top: 1rem;
-    padding: 0.5rem 0.7rem;
-    font-family: Moranga-Light;
+    padding: 0.5rem 0.85rem;
+    font-family: Proxima;
     font-size: 1.2rem;
     text-align: center;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+button:active {
+    transform: translateY(3px);
+    background-color: #595873;
+
+
+}
+
+#magic button {
+    padding: 0.8rem 1.25rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+#searchImage {
+    width: 100%;
+    height: auto;
+    margin: 3rem 0;
+    margin-bottom: 2.5rem;
+
+}
+
+.guess-submit {
+    text-decoration: none;
+    color: white;
+}
+
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
