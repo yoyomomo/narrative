@@ -75,6 +75,7 @@ body {
     text-align: center;
     margin: auto;
     padding: 0.5rem;
+    padding-left: 1rem;
     opacity: 100%;
     cursor: default;
 }
@@ -183,6 +184,8 @@ body {
 
 .chapters {
     padding-top: 45%;
+    width: 95%;
+    margin: auto;
     -webkit-animation: fadein 2s;
     /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 2s;
@@ -200,7 +203,7 @@ body {
 }
 
 .chapters h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     line-height: 3rem;
     font-family: Moranga-LightIt;
     color: #60667E;
@@ -244,19 +247,18 @@ body {
     width: 100%;
     background-repeat: no-repeat;
     background-size: 55%;
-    margin-left: 0;
 
 }
 
 .subHeader h1 {
     font-family: Moranga-LightIt;
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 2rem;
+    line-height: 2rem;
     color: #60667E;
     width: 100%;
     text-align: center;
     margin: auto;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
 
 }
 
@@ -285,16 +287,15 @@ body {
     grid-gap: 5%;
     margin-left: 2.5%;
     margin-right: 2.65%;
-    margin-bottom: 2vh;
+    margin-bottom: 4vh;
 }
 
 .grid2 {
     display: grid;
-    grid-template-columns: 53% 42%;
+    grid-template-columns: 1fr;
     grid-gap: 5%;
-    margin-left: 8%;
-    margin-right: 20%;
-    margin-bottom: 4vh;
+    margin: auto;
+    margin-bottom: 2vh;
 
 }
 
@@ -311,20 +312,40 @@ body {
     font-family: Proxima;
     padding: 10px;
     height: auto;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 0rem;
 
+}
+
+.col3 i {
+    display: block;
+    margin-top: 0.75rem;
 }
 
 .col3 span,
 .col1 span {
     font-size: 1.2rem;
     text-align: center;
+    margin-top: 1rem;
 }
 
 .col3 img {
     display: block;
-    margin: auto;
-    margin-top: 6rem;
+    margin: 1rem auto;
+}
 
+#mobilepic3 {
+    display: none;
+    margin: 1rem auto;
+}
+
+#mainPic2 {
+    display: none;
+}
+
+.col3 br {
+    display: none;
 }
 
 #mobilepic {
@@ -352,33 +373,38 @@ body {
 
 .col1 {
     width: 95%;
-    margin: 1.5rem auto;
+    margin: 0 auto;
     font-size: 1rem;
     line-height: 1.5rem;
     font-family: Proxima;
     padding: 10px;
-    padding-bottom: 8rem;
+    padding-top: 0;
+    padding-bottom: 2rem;
 
 }
 
 
 
 
-.col4 h1 {
+.col4 h1,
+#deadEnd h1 {
     text-align: center;
     font-family: Moranga-LightIt;
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 2rem;
+    line-height: 2rem;
     color: #60667E;
+    margin-bottom: 0.75rem;
+
 }
 
 #sign-in h1 {
     margin: 0 auto;
     margin-top: 2rem;
+    margin-bottom: 0.75rem;
     text-align: center;
     font-family: Moranga-LightIt;
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 2rem;
+    line-height: 2rem;
     color: #60667E;
 }
 
@@ -386,19 +412,23 @@ body {
 
 
 .col4 {
-    width: 40%;
-    margin: 4rem auto;
-    font-size: 1.75rem;
-    line-height: 3rem;
+    width: 95%;
+    margin: 0rem auto;
+    font-size: 1rem;
+    line-height: 1.5rem;
     font-family: Proxima;
     padding: 10px;
-    text-align: center;
+    text-align: left;
 
+}
+
+.col4 br {
+    display: none;
 }
 
 .col4 img {
     display: block;
-    margin: 3rem auto;
+    margin: 1rem 0;
 
 }
 
@@ -406,11 +436,11 @@ body {
     display: none;
 }
 
-
 .hidden {
     display: none;
     text-align: center;
     color: firebrick;
+    font-size: 1.2rem;
 }
 
 .hidden h4 {
@@ -510,8 +540,8 @@ a {
 #searchImage {
     width: 100%;
     height: auto;
-    margin: 3rem 0;
-    margin-bottom: 2.5rem;
+    margin: 1rem 0;
+    margin-bottom: 1rem;
 
 }
 

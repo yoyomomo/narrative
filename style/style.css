@@ -228,6 +228,12 @@ body {
 
 }
 
+.photoAlbumText img {
+    display: none;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+}
+
 .subHeader h1 {
     font-family: Moranga-LightIt;
     font-size: 6rem;
@@ -296,6 +302,10 @@ body {
     margin: auto;
     margin-top: 6rem;
 
+}
+
+#mobilepic {
+    display: none;
 }
 
 .col2 img {

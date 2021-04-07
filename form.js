@@ -5,6 +5,7 @@ var answer3 = document.getElementById('guess-input3').name;
 
 
 
+
 //     THIRD QUESTION START
 function guessAnswer() {
     $("button.guess-submit").click(function (event) {
@@ -19,7 +20,7 @@ function guessAnswer() {
 
         } else {
             $('#wrong3').show().fadeOut(1000);
-              $("#guess-input").animate({
+            $("#guess-input").animate({
                 "border-color": "#b22222"
             }).animate({
                 "border-color": "#FEF0DC"
@@ -62,7 +63,7 @@ function guessAnswer2() {
 
         } else {
             $('#wrong2').show().fadeOut(1000);
-              $("#guess-input2").animate({
+            $("#guess-input2").animate({
                 "border-color": "#b22222"
             }).animate({
                 "border-color": "#FEF0DC"
