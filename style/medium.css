@@ -182,7 +182,7 @@ section {
 
 
 .chapters {
-    padding-top: 12%;
+    padding-top: 30%;
     -webkit-animation: fadein 2s;
     /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 2s;
@@ -193,6 +193,7 @@ section {
 .chapters h3 {
     font-size: 3rem;
     font-family: Moranga-Medium;
+    margin-bottom: 2rem;
 
 }
 
@@ -201,6 +202,7 @@ section {
     line-height: 3rem;
     font-family: Moranga-LightIt;
     color: #60667E;
+    margin: 2rem auto;
 
 }
 
@@ -327,6 +329,16 @@ section {
     display: none;
 }
 
+.first {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+
+}
 
 
 .col3 span,
