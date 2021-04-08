@@ -164,18 +164,27 @@ body {
 /* MENU -- END */
 
 
-.main {
+section {
     width: 100vw;
     height: 100vh;
     /*display: grid;*/
     margin-bottom: 40px;
     text-align: center;
+    padding-top: 12%;
+
+
+
+}
+
+.main {
+    width: 97vw;
+    margin-left: 0;
 
 }
 
 
+
 .chapters {
-    padding-top: 15%;
     -webkit-animation: fadein 2s;
     /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 2s;
@@ -196,6 +205,7 @@ body {
     font-family: Moranga-LightIt;
     margin-bottom: 3rem;
     color: #60667E;
+
 
 }
 
