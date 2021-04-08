@@ -276,6 +276,7 @@ body {
 }
 
 .photoAlbumText img {
+    display: block;
     margin: 0 auto;
     margin-bottom: 0.5rem;
 }
@@ -340,8 +341,14 @@ body {
     margin: 1rem auto;
 }
 
+#mobilepic2 {
+    display: block;
+}
+
 #mainPic2 {
     display: none;
+    width: 100%;
+    height: auto;
 }
 
 .col3 br {
@@ -349,6 +356,9 @@ body {
 }
 
 #mobilepic {
+    display: block;
+    max-width: 90%;
+    height: auto;
     margin-top: 3vh;
     -ms-transform: rotate(5deg);
     transform: rotate(5deg);
@@ -372,7 +382,7 @@ body {
 
 
 .col1 {
-    width: 95%;
+    width: 93%;
     margin: 0 auto;
     font-size: 1rem;
     line-height: 1.5rem;
