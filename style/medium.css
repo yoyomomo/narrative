@@ -142,7 +142,7 @@ body {
 
 #lock {
     display: none;
-      max-height: 3.5rem;
+    max-height: 3.5rem;
     width: auto;
 }
 
@@ -197,7 +197,7 @@ section {
     font-size: 3rem;
     font-family: Moranga-Medium;
     margin-bottom: 2rem;
-        text-align: center;
+    text-align: center;
 
 
 }
@@ -208,7 +208,7 @@ section {
     font-family: Moranga-LightIt;
     color: #60667E;
     margin: 2rem auto;
-        text-align: center;
+    text-align: center;
 
 
 }
@@ -260,10 +260,10 @@ section {
     font-size: 4.5rem;
     line-height: 4rem;
     color: #60667E;
-    width: 100%;
+    width: 55%;
     text-align: left;
     margin: auto;
-    margin-right: 15%;
+    margin-right: 5%;
     margin-bottom: 3rem;
 
 }

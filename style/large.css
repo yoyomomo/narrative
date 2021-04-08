@@ -260,10 +260,10 @@ section {
     font-size: 5rem;
     line-height: 5rem;
     color: #60667E;
-    width: 100%;
+    width: 50%;
     text-align: left;
     margin: auto;
-    margin-right: 15%;
+    margin-right: 5%;
     margin-bottom: 3rem;
 
 }
@@ -353,7 +353,7 @@ section {
 
 .first,
 .col2 img {
-    max-width: 90%;
+    max-width: 80%;
     height: auto;
     margin: 0;
     margin-top: 2.5rem;
