@@ -332,7 +332,10 @@ section {
 
 #mobilepic3 {
     display: block;
-    margin-top: 6rem;
+    margin-top: 4rem;
+    margin-left: 8rem;
+    max-width: 80%;
+    height: auto;
 }
 
 #mobilepic4 {

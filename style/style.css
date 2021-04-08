@@ -336,6 +336,14 @@ section {
     display: none;
 }
 
+#mobilepic3 {
+    max-width: 85%;
+    height: auto;
+    margin-top: 0;
+    margin-left: 5rem;
+}
+
+
 
 
 

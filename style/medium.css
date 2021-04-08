@@ -330,6 +330,9 @@ section {
 #mobilepic3 {
     display: block;
     margin-top: 6rem;
+    max-width: 100%;
+    height: auto;
+    margin-left: 0;
 }
 
 #mobilepic4 {
