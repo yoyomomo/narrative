@@ -142,6 +142,8 @@ body {
 
 #lock {
     display: none;
+      max-height: 3.5rem;
+    width: auto;
 }
 
 #lockChap2:hover #lock,
@@ -195,6 +197,8 @@ section {
     font-size: 3rem;
     font-family: Moranga-Medium;
     margin-bottom: 2rem;
+        text-align: center;
+
 
 }
 
@@ -204,6 +208,8 @@ section {
     font-family: Moranga-LightIt;
     color: #60667E;
     margin: 2rem auto;
+        text-align: center;
+
 
 }
 
