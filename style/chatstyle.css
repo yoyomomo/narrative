@@ -46,6 +46,13 @@ body {
     animation: flyin 0.75s;
 }
 
+@media only screen and (max-width: 1900px) {
+    .container {
+        margin: 10vh auto;
+
+    }
+}
+
 .namelabel {
     display: flex;
     justify-content: space-between;
