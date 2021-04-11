@@ -1,5 +1,6 @@
 /*GALLERY POPUP CSS // Code modified from https://www.w3schools.com/howto/howto_js_lightbox.asp and https://www.w3schools.com/howto/howto_js_slideshow.asp--> */
 
+
 .mySlides {
     display: none
 }
@@ -13,10 +14,12 @@
 /* Slideshow container */
 .slideshow-container {
     display: none;
+    position: relative;
 
 
 
 }
+
 
 .purple {
 
@@ -35,6 +38,31 @@
     z-index: 10;
 }
 
+@media only screen and (max-width: 1900px) {
+    .purple {
+        position: fixed;
+        top: 1%;
+        left: 9%;
+        width: 81%;
+        padding: 0.3rem 0rem;
+        padding-top: 1rem;
+        box-shadow: 0px 1px 100vh 100vh rgba(0, 0, 0, 0.8);
+    }
+
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 0.5rem;
+        color: #A6AED1;
+        font-weight: bold;
+        font-size: 4rem;
+
+    }
+}
+
 
 /* Next & previous buttons */
 .prev,
@@ -46,7 +74,7 @@
     padding: 1rem;
     color: #A6AED1;
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 /* Position the "next button" to the right */
@@ -58,6 +86,19 @@
     left: .25rem;
 }
 
+@media only screen and (max-width: 1900px) {
+
+    .next {
+        right: -4rem;
+    }
+
+    .prev {
+        left: -4rem;
+    }
+}
+
+
+
 
 /* The Close Button */
 .close {
@@ -67,6 +108,18 @@
     right: 1.25rem;
     font-size: 4.5rem;
     font-weight: bold;
+}
+
+@media only screen and (max-width: 1900px) {
+    .close {
+        position: absolute;
+        top: -1.25rem;
+        right: -3.75rem;
+        font-size: 6rem;
+        font-weight: bold;
+        padding: 0.5rem;
+
+    }
 }
 
 .close:hover,
@@ -98,6 +151,21 @@
     background-color: #252830;
 }
 
+@media only screen and (max-width: 1900px) {
+    .dots {
+        position: absolute;
+        top: 97.5%;
+        left: 45%;
+    }
+
+    .dot {
+        height: 0.5rem;
+        width: 0.5rem;
+        margin: 0 3px;
+        padding: auto;
+    }
+
+}
 
 @keyframes flyin {
     from {

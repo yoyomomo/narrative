@@ -121,10 +121,9 @@
     <div id="sign-in2" style="display: none;">
 
         <div class="grid">
-            <div class="cell col2" id="double">
-                <img src="img/samphoto.png" class="first">
-                <!--SECOND PIC -->
-            </div>
+            <img src="img/keyboard.png" style="-ms-transform: rotate(0deg);
+transform: rotate(0deg);" id="double">
+            <!--SECOND PIC -->
 
 
             <div class="cell col3">
@@ -164,7 +163,6 @@
         </div>
 
         <!-- GALLERY POPUP *START* // Code modified from https://www.w3schools.com/howto/howto_js_lightbox.asp and https://www.w3schools.com/howto/howto_js_slideshow.asp-->
-
         <div class="slideshow-container" id="myModal">
 
             <div class="purple">
@@ -196,7 +194,7 @@
 
                 <br>
 
-                <div style="text-align:center">
+                <div class="dots" style="text-align:center">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span>
@@ -205,87 +203,91 @@
                 </div>
             </div>
         </div>
+
         <!-- GALLERY POPUP *END* -->
 
-    </div>
 
-    <div id="sign-in" style="display: none;">
-        <h1>After repeatedly typing</h1>
-        <div class="cell col1">
-            and deleting, and typing and deleting, Robin sent the email and almost immediately, she heard the familiar notification sound of new mail. It was an automated message: “This mailbox is no longer in service.” Despite her disappointment, Robin wasn’t surprised. Sam probably thought <i>happibunni43@hotmail.com</i> wasn’t appropriate for a twenty-something working professional anymore and changed it.
 
-            <p>Robin would have to reach her another way. She scanned through their old emails, looking for clues. Sam mentioned her high school in one of them. Maybe Robin could contact a student or teacher she knew. She checked Facebook, but found probably hundreds of people linked to her school. Where would she even begin? They couldn’t have all known Sam. Robin needed to find a photo, a status update—something indicating they knew Sam.
-                <br><br>
-                And once she did, she’d be a step closer to finding her friend.
-                <br><br>
+        <div id="sign-in" style="display: none;">
+            <h1>After repeatedly typing</h1>
+            <div class="cell col1">
+                and deleting, and typing and deleting, Robin sent the email and almost immediately, she heard the familiar notification sound of new mail. It was an automated message: “This mailbox is no longer in service.” Despite her disappointment, Robin wasn’t surprised. Sam probably thought <i>happibunni43@hotmail.com</i> wasn’t appropriate for a twenty-something working professional anymore and changed it.
 
-                <!--THIRD QUESTION START -->
-                <span style="display: block; text-align: center;color: #60667E;">Who does Robin message?</span>
+                <p>Robin would have to reach her another way. She scanned through their old emails, looking for clues. Sam mentioned her high school in one of them. Maybe Robin could contact a student or teacher she knew. She checked Facebook, but found probably hundreds of people linked to her school. Where would she even begin? They couldn’t have all known Sam. Robin needed to find a photo, a status update—something indicating they knew Sam.
+                    <br><br>
+                    And once she did, she’d be a step closer to finding her friend.
+                    <br><br>
 
-                <div class="question">
+                    <!--THIRD QUESTION START -->
+                    <span style="display: block; text-align: center;color: #60667E;">Who does Robin message?</span>
 
-                    <input id="guess-input" type="text" name="jessica bratford" value="" placeholder="Hint: Two words" />
+                    <div class="question">
 
-                    <button id="guess-submit" class="guess-submit" style="margin-bottom: 0;">Submit</button>
+                        <input id="guess-input" type="text" name="jessica bratford" value="" placeholder="Hint: Two words" />
 
-                </div>
+                        <button id="guess-submit" class="guess-submit" style="margin-bottom: 0;">Submit</button>
 
-                <div id="messages">
-
-                    <div class="hidden" id="wrong3">
-                        <h4> Nope, try again!</h4>
                     </div>
 
-                </div>
-                <!--THIRD QUESTION END -->
+                    <div id="messages">
 
+                        <div class="hidden" id="wrong3">
+                            <h4> Nope, try again!</h4>
+                        </div>
+
+                    </div>
+                    <!--THIRD QUESTION END -->
+
+            </div>
         </div>
-    </div>
 
-    <!-- GALLERY JS *START* // Code modified from https://www.w3schools.com/howto/howto_js_lightbox.asp and https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+        <!-- GALLERY JS *START* // Code modified from https://www.w3schools.com/howto/howto_js_lightbox.asp and https://www.w3schools.com/howto/howto_js_slideshow.asp-->
 
 
-    <script>
-        function openModal() {
-            document.getElementById("myModal").style.display = "block";
-        }
-
-        function closeModal() {
-            document.getElementById("myModal").style.display = "none";
-        }
-
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-
-            if (n > slides.length) {
-                slideIndex = 1
+        <script>
+            function openModal() {
+                document.getElementById("myModal").style.display = "block";
             }
-            if (n < 1) {
-                slideIndex = slides.length
+
+            function closeModal() {
+                document.getElementById("myModal").style.display = "none";
             }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
             }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
             }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
-    <!-- GALLERY JS *END* -->
-    <script src="form.js"> </script>
-</body></html>
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+
+        </script>
+        <!-- GALLERY JS *END* -->
+        <script src="form.js"> </script>
+</body>
+
+</html>

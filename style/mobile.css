@@ -24,6 +24,11 @@
     src: url(../Proxima_Nova/ProximaSoft-Regular.otf) format("opentype");
 }
 
+@font-face {
+    font-family: ProximaMed;
+    src: url(../Proxima_Nova/ProximaSoft-Medium.otf) format("opentype");
+}
+
 * {
     box-sizing: border-box;
 
@@ -559,6 +564,67 @@ a {
     text-decoration: none;
     color: white;
 }
+
+/* TITLE */
+#qr_sect {
+    position: relative;
+    background-image: url(../img/LandingIllustrations.png);
+    background-position: 2vw 43vh;
+    height: 100vh;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0;
+    padding: 0;
+
+}
+
+.centered {
+    display: block;
+    width: 100%;
+    position: absolute;
+    padding: 0.5rem;
+    margin: 20% auto;
+    margin-top: 40%;
+    font-size: 1.25rem;
+    font-family: ProximaMed;
+    text-align: center;
+}
+
+
+
+.centered h1 {
+    display: block;
+    text-align: left;
+    font-family: Moranga-RegularIt;
+    font-size: 2.75rem;
+    line-height: 3rem;
+    color: #60667E;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1rem;
+    text-align: center;
+
+
+
+}
+
+.centered span {
+    margin: 0rem;
+
+}
+
+#friendship {
+    padding: 0.75rem 2.5rem;
+    margin-left: auto;
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    letter-spacing: 1.25px;
+    border-radius: 10px;
+
+}
+
+
 
 
 @keyframes fadein {
