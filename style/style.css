@@ -235,11 +235,11 @@ section {
 
 }
 
-.gallery {
+#gallery {
     cursor: pointer;
 }
 
-.gallery:hover {
+#gallery :hover {
     color: #808598;
 }
 
