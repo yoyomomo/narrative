@@ -56,10 +56,10 @@ body {
 }
 
 .profile {
-    background-image: url(../img/teacher.png);
-    background-size: 190%;
+    background-image: url(../img/teacher2.png);
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: -0.7rem -0.2rem;
+    background-position: 0rem 0rem;
 
     height: 35px;
     width: 35px;
@@ -85,10 +85,10 @@ body {
 }
 
 .profile2 {
-    background-image: url(../img/teacher.png);
-    background-size: 190%;
+    background-image: url(../img/teacher2.png);
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: -1.3rem -0.3rem;
+    background-position: 0rem 0rem;
     height: 65px;
     width: 65px;
     border-radius: 50%;
