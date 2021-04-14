@@ -45,7 +45,7 @@ body {
     background-color: #FEF0DC;
     font-family: Proxima;
     font-size: 1rem;
-    color: #2d2d2d;
+    color: black;
 }
 
 /* MENU -- START */
@@ -303,10 +303,10 @@ section {
 
 .grid2 {
     display: grid;
-    grid-template-columns: 53% 42%;
-    grid-gap: 5%;
-    margin-left: 2.5%;
-    margin-right: 6rem;
+    grid-template-columns: 48% 50%;
+    grid-gap: 2%;
+    margin-left: 0%;
+    margin-right: 8rem;
     margin-bottom: 4vh;
 
 }
@@ -338,7 +338,7 @@ section {
 #mobilepic3 {
     display: block;
     margin-top: 4rem;
-    margin-left: 8rem;
+    margin-left: 3rem;
     max-width: 80%;
     height: auto;
 }
