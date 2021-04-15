@@ -1,3 +1,16 @@
+//Main code for question/answer verification from: https://codepen.io/meloffbird/pen/RrMeeZ
+
+// Other code written with help from StackOverflow users:
+
+// For timed scroll: https://stackoverflow.com/questions/50044713/slow-transition-to-same-page-anchor-with-window-location/50044854#50044854
+
+// For border animation: https://stackoverflow.com/questions/9774134/jquery-animate-border-bottom-width
+
+//To redirect to new page: https://stackoverflow.com/questions/4744751/how-do-i-redirect-with-javascript
+
+// To unlock sections: https://stackoverflow.com/questions/44382153/how-to-make-div-appear-on-button-click-using-javascript
+
+
 var answer = document.getElementById('guess-input').name;
 var a = document.getElementById('lockChap2');
 var answer2 = document.getElementById('guess-input2').name;

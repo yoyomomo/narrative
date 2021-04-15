@@ -28,7 +28,10 @@
 <body>
 
 
-    <!-- MENU *START* Code modified from https://www.w3schools.com/howto/howto_css_vertical_menu.asp -->
+    <!-- MENU *START* 
+Code modified from https://www.w3schools.com/howto/howto_css_vertical_menu.asp 
+
+Modified code for text to image on hover: https://stackoverflow.com/questions/30785038/change-image-to-text-on-hover/30799256#30799256-->
 
     <div class="vertical-menu">
         <div class="chapter-cell">
@@ -95,7 +98,7 @@
             <br>
             <i>So much for my promise,</i> Robin thought as she gently ran the tips of her fingers across the photo. She noticed they left a soft grey smudge. She turned over the photo and saw a note written in charcoal.<br><br>
 
-            <!--FIRST QUESTION START -->
+            <!--FIRST QUESTION START // All questions code modified from https://codepen.io/meloffbird/pen/RrMeeZ -->
 
             <span style="display: block; color: #60667E;">What email is written on the back of the photo? </span>
 
@@ -161,133 +164,128 @@ transform: rotate(0deg);" id="double">
 
             </div>
         </div>
+    <!-- GALLERY POPUP *START* // Code modified from https://www.w3schools.com/howto/howto_js_lightbox.asp and https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+    <div class="slideshow-container" id="myModal">
 
-        <!-- GALLERY POPUP *START* // Code modified from https://www.w3schools.com/howto/howto_js_lightbox.asp and https://www.w3schools.com/howto/howto_js_slideshow.asp-->
-        <div class="slideshow-container" id="myModal">
+        <div class="purple">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
 
-            <div class="purple">
-                <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="mySlides fade">
+                <img src="img/emails-1.png" style="width:95%">
+            </div>
 
-                <div class="mySlides fade">
-                    <img src="img/emails-1.png" style="width:95%">
-                </div>
+            <div class="mySlides fade">
+                <img src="img/emails-2.png" style="width:95%">
+            </div>
 
-                <div class="mySlides fade">
-                    <img src="img/emails-2.png" style="width:95%">
-                </div>
+            <div class="mySlides fade">
+                <img src="img/emails-3.png" style="width:95%">
+            </div>
 
-                <div class="mySlides fade">
-                    <img src="img/emails-3.png" style="width:95%">
-                </div>
+            <div class="mySlides fade">
+                <img src="img/emails-4.png" style="width:95%">
+            </div>
 
-                <div class="mySlides fade">
-                    <img src="img/emails-4.png" style="width:95%">
-                </div>
+            <div class="mySlides fade">
+                <img src="img/emails-5.png" style="width:95%">
+            </div>
 
-                <div class="mySlides fade">
-                    <img src="img/emails-5.png" style="width:95%">
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 
-                <br>
+            <br>
 
-                <div class="dots" style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                    <span class="dot" onclick="currentSlide(5)"></span>
-                </div>
+            <div class="dots" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
             </div>
         </div>
+    </div>
+    <!-- GALLERY POPUP *END* -->
 
-        <!-- GALLERY POPUP *END* -->
 
 
+    <div id="sign-in" style="display: none;">
+        <h1>After repeatedly typing</h1>
+        <div class="cell col1">
+            and deleting, and typing and deleting, Robin sent the email and almost immediately, she heard the familiar notification sound of new mail. It was an automated message: “This mailbox is no longer in service.” Despite her disappointment, Robin wasn’t surprised. Sam probably thought <i>happibunni43@hotmail.com</i> wasn’t appropriate for a twenty-something working professional anymore and changed it.
 
-        <div id="sign-in" style="display: none;">
-            <h1>After repeatedly typing</h1>
-            <div class="cell col1">
-                and deleting, and typing and deleting, Robin sent the email and almost immediately, she heard the familiar notification sound of new mail. It was an automated message: “This mailbox is no longer in service.” Despite her disappointment, Robin wasn’t surprised. Sam probably thought <i>happibunni43@hotmail.com</i> wasn’t appropriate for a twenty-something working professional anymore and changed it.
+            <p>Robin would have to reach her another way. She scanned through their old emails, looking for clues. Sam mentioned her high school in one of them. Maybe Robin could contact a student or teacher she knew. She checked Facebook, but found probably hundreds of people linked to her school. Where would she even begin? They couldn’t have all known Sam. Robin needed to find a photo, a status update—something indicating they knew Sam.
+                <br><br>
+                And once she did, she’d be a step closer to finding her friend.
+                <br><br>
 
-                <p>Robin would have to reach her another way. She scanned through their old emails, looking for clues. Sam mentioned her high school in one of them. Maybe Robin could contact a student or teacher she knew. She checked Facebook, but found probably hundreds of people linked to her school. Where would she even begin? They couldn’t have all known Sam. Robin needed to find a photo, a status update—something indicating they knew Sam.
-                    <br><br>
-                    And once she did, she’d be a step closer to finding her friend.
-                    <br><br>
+                <!--THIRD QUESTION START -->
+                <span style="display: block; text-align: center;color: #60667E;">Who does Robin message?</span>
 
-                    <!--THIRD QUESTION START -->
-                    <span style="display: block; text-align: center;color: #60667E;">Who does Robin message?</span>
+                <div class="question">
 
-                    <div class="question">
+                    <input id="guess-input" type="text" name="jessica bratford" value="" placeholder="Hint: Two words" />
 
-                        <input id="guess-input" type="text" name="jessica bratford" value="" placeholder="Hint: Two words" />
+                    <button id="guess-submit" class="guess-submit" style="margin-bottom: 0;">Submit</button>
 
-                        <button id="guess-submit" class="guess-submit" style="margin-bottom: 0;">Submit</button>
+                </div>
 
+                <div id="messages">
+
+                    <div class="hidden" id="wrong3">
+                        <h4> Nope, try again!</h4>
                     </div>
 
-                    <div id="messages">
+                </div>
+                <!--THIRD QUESTION END -->
 
-                        <div class="hidden" id="wrong3">
-                            <h4> Nope, try again!</h4>
-                        </div>
-
-                    </div>
-                    <!--THIRD QUESTION END -->
-
-            </div>
         </div>
+    </div>
 
-        <!-- GALLERY JS *START* // Code modified from https://www.w3schools.com/howto/howto_js_lightbox.asp and https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+    <!-- GALLERY JS *START* // Code modified from https://www.w3schools.com/howto/howto_js_lightbox.asp and https://www.w3schools.com/howto/howto_js_slideshow.asp-->
 
 
-        <script>
-            function openModal() {
-                document.getElementById("myModal").style.display = "block";
+    <script>
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+
+            if (n > slides.length) {
+                slideIndex = 1
             }
-
-            function closeModal() {
-                document.getElementById("myModal").style.display = "none";
+            if (n < 1) {
+                slideIndex = slides.length
             }
-
-            var slideIndex = 1;
-            showSlides(slideIndex);
-
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
             }
-
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
             }
-
-            function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("dot");
-
-                if (n > slides.length) {
-                    slideIndex = 1
-                }
-                if (n < 1) {
-                    slideIndex = slides.length
-                }
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-            }
-
-        </script>
-        <!-- GALLERY JS *END* -->
-        <script src="form.js"> </script>
-</body>
-
-</html>
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <!-- GALLERY JS *END* -->
+    <script src="form.js"> </script>
+</body></html>

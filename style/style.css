@@ -135,6 +135,8 @@ body {
 
 }
 
+/* Modified code for text to image on hover: https://stackoverflow.com/questions/30785038/change-image-to-text-on-hover/30799256#30799256 -- START */
+
 #lockChap2 #text {
     display: block;
 }
@@ -157,6 +159,8 @@ body {
     margin: 0;
 
 }
+
+/* Modified code for text to image on hover: https://stackoverflow.com/questions/30785038/change-image-to-text-on-hover/30799256#30799256 -- END */
 
 #lockChap2,
 #lockChap3 {

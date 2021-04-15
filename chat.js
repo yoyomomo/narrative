@@ -1,3 +1,13 @@
+//JS Code written with help from StackOverflow users:
+
+// https://stackoverflow.com/questions/66834196/how-to-make-multiple-divs-appear-one-after-the-other-using-javascript
+
+// https://stackoverflow.com/questions/66835967/how-to-run-a-function-after-one-is-done-or-after-an-item-in-an-array-loads
+
+// https://stackoverflow.com/questions/66836842/how-to-auto-scroll-chat-box-as-messages-appear
+
+// https://stackoverflow.com/questions/66838108/how-to-stop-sound-from-playing-or-how-do-i-make-it-play-once
+
 const myHTMLCollection = document.getElementsByClassName("invisible");
 const HTMLElementsArr = [...myHTMLCollection];
 const messageTeacher = document.getElementsByClassName("message-teacher");
